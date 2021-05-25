@@ -1,0 +1,2 @@
+class PetNanny < ApplicationRecord
+end

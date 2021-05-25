@@ -1,0 +1,2 @@
+class PetReview < ApplicationRecord
+end
