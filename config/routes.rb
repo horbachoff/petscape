@@ -1,22 +1,19 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  get: '/pet_nannies/' to: 'pet_nannies#index'
-  get: '/pet_nannies/:id' to: 'pet_nannies#show'
-  get: '/pet_nannies/new' to: 'pet_nannies#new'
-  post: '/pet_nannies/' to: 'pet_nannies#create'
 
-  get: '/pets/:id' to: 'pet#show'
+  resources :pet_nannies, only: [:new, :create, :index, :show]
 
-  get: '/nanny_dashboard/' to: 'nanny_dashboard#nanny_dashboard'
+  resources :pets, only: [:create, :show]
 
-  get: '/dashboard' to: 'dashboard#dashboard'
+  get '/nanny_dashboard/', to: 'nanny_dashboard#nanny_dashboard'
 
-  patch: '/bookings/:id/accept' to: 'bookings#accept'
-  patch: '/bookings/:id/decline' to: 'bookings#decline'
+  get '/dashboard', to: 'dashboard#dashboard'
 
-  resources :bookings do
-    resources :pet_reviews
+  patch '/bookings/:id/accept', to: 'bookings#accept'
+  patch '/bookings/:id/decline', to: 'bookings#decline'
+
+  resources :bookings, only: [:new, :create] do
+    resources :pet_reviews, only: [:new, :create]
   end
-  route 'bookings#new'
 end
