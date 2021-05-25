@@ -5,10 +5,11 @@ class PetsController < ApplicationController
 
   def create
     @pet = Pet.new(pet_params)
-    if @pet = Pet.save
-      redirect_to pet_pa
-
-    redirect_to pets_path(@pet)
+    if @pet.save
+      redirect_to pet_path(@pet)
+    else
+      render :new
+    end
   end
 
   def show
