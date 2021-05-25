@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   
   resources :pet_nannies, only: [:new, :create, :index, :show]
 
-  resources :pets, only: [:create, :show]
+  resources :pets, only: [:create, :show, :new]
 
   get '/nanny_dashboard/', to: 'nanny_dashboard#nanny_dashboard'
 

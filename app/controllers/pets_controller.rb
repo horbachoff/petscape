@@ -5,7 +5,8 @@ class PetsController < ApplicationController
 
   def create
     @pet = Pet.new(pet_params)
-    @pet = Pet.save
+    if @pet = Pet.save
+      redirect_to pet_pa
 
     redirect_to pets_path(@pet)
   end
