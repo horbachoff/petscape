@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Pet.destroy_all
 User.destroy_all
+PetNanny.destroy_all
 
 user1 = User.create!(
   name: "Bob",
@@ -35,7 +36,6 @@ pet1 = Pet.create!(
   vet_record: "Recovered from parvovirus",
   medications: "none",
   dietary: "poultry",
-  profile_picture: “https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfMrZwXNHTlMVE-SymlzpcIL7mEBNV0ML9lw&usqp=CAU”,
   user: user1
 )
 
@@ -44,7 +44,6 @@ pet2 = Pet.create!(
   vet_record: "No allergies",
   medications: "none",
   dietary: "poultry",
-  profile_picture: “https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSukCzd_pp94Sydp7k83i6iQzAuUI9Kuvvr0A&usqp=CAU”,
   user: user2
 )
 
@@ -53,7 +52,21 @@ pet3 = Pet.create!(
   vet_record: "none",
   medications: "none",
   dietary: "poultry",
-  profile_picture: “https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_November_2010-1a.jpg”,
+  user: user3
+)
+
+nanny1 = PetNanny.create!(
+  introduction: "Blah blah blah blah blah",
+  user: user1
+)
+
+nanny2 = PetNanny.create!(
+  introduction: "Blah blah blah blah blah",
+  user: user2
+)
+
+nanny3 = PetNanny.create!(
+  introduction: "Blah blah blah blah blah",
   user: user3
 )
 

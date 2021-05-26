@@ -4,11 +4,11 @@ class PetNanniesController < ApplicationController
   end
 
   def new
-   @pet_nanny = PetNanny.new
+    @pet_nanny = PetNanny.new
   end
 
   def create
-     @pet_nanny = PetNanny.new(pet_nanny_params)
+    @pet_nanny = PetNanny.new(pet_nanny_params)
     if @pet_nanny.save
       redirect_to pet_nanny_path(@pet_nanny)
     else
@@ -20,7 +20,7 @@ class PetNanniesController < ApplicationController
     @pet_nanny = PetNanny.find(params[:id])
   end
 
-   private
+  private
 
   def pet_nanny_params
     params.required(:pet_nanny).permit(:introduction)
