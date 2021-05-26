@@ -3,3 +3,19 @@
 <h2><%= @pet.medications %></h2>
 <h2><%= @pet.dietary %></h2>
 <img src="<%= @pet.profile_picture %>" alt="">
+
+  <div class="container pt-5 pb-5">
+      <div class="card-white p-5 text-center" id="introduction">
+        <h1>Hello, I'm <%= @pet.name %> </h1>
+          <img src="<%= @pet.profile_picture%>" class="img-round"  alt="pet_name">
+        <p>
+          <span class="font-weight-bold">Vet Record:</span> <%= @pet.vet_record %>
+        </p>
+        <p>
+          <span class="font-weight-bold">Medication:</span> <%= @pet.medication %>
+        </p>
+         <p>
+          <span class="font-weight-bold">Dietary:</span> <%= @pet.dietary %>
+        </p>
+      </div>
+  </div>
