@@ -10,48 +10,60 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_24_221652) do
+ActiveRecord::Schema.define(version: 2021_05_26_160155) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "bookings", force: :cascade do |t|
-    t.date "start_time"
+    t.date "star_time"
     t.date "end_time"
-    t.string "status"
+    t.bigint "pet_nanny_id", null: false
+    t.bigint "pet_id", null: false
+    t.bigint "user_id", null: false
+    t.string "status", default: "pending"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["pet_id"], name: "index_bookings_on_pet_id"
+    t.index ["pet_nanny_id"], name: "index_bookings_on_pet_nanny_id"
+    t.index ["user_id"], name: "index_bookings_on_user_id"
   end
 
   create_table "pet_nannies", force: :cascade do |t|
     t.text "introduction"
-    t.string "profile_picture"
+    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_pet_nannies_on_user_id"
   end
 
   create_table "pet_nanny_reviews", force: :cascade do |t|
     t.text "content"
     t.integer "rating"
+    t.bigint "booking_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["booking_id"], name: "index_pet_nanny_reviews_on_booking_id"
   end
 
   create_table "pet_reviews", force: :cascade do |t|
     t.text "content"
     t.integer "rating"
+    t.bigint "booking_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["booking_id"], name: "index_pet_reviews_on_booking_id"
   end
 
   create_table "pets", force: :cascade do |t|
     t.string "name"
-    t.text "vet_record"
-    t.text "medication"
-    t.text "dietary"
-    t.string "profile_picture"
+    t.string "vet_record"
+    t.string "medications"
+    t.string "dietary"
+    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_pets_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -59,9 +71,15 @@ ActiveRecord::Schema.define(version: 2021_05_24_221652) do
     t.string "address"
     t.string "phone_number"
     t.string "email"
-    t.string "profile_picture"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  add_foreign_key "bookings", "pet_nannies"
+  add_foreign_key "bookings", "pets"
+  add_foreign_key "bookings", "users"
+  add_foreign_key "pet_nannies", "users"
+  add_foreign_key "pet_nanny_reviews", "bookings"
+  add_foreign_key "pet_reviews", "bookings"
+  add_foreign_key "pets", "users"
 end
