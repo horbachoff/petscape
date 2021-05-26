@@ -1,13 +1,12 @@
 <%= render "partials/banner", header: "Fuck Yo Pets, Take A Holiday"%>
 
-<h1>These are the pet nannies close to you!</h1>
+<h1>Animals that'll pay your utility bills!</h1>
     <div class="container">
       <div class="cards">
-        <% @pet_nannies.each do |nanny| %>
+        <% @pets.each do |pet| %>
         <div class="card">
-          <%= nanny.name %>
+          <%= pet.name %>
         </div>
         <% end %>
       </div>
     </div>
-
