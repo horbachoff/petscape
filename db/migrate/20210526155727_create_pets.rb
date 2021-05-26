@@ -2,10 +2,10 @@ class CreatePets < ActiveRecord::Migration[6.0]
   def change
     create_table :pets do |t|
       t.string :name
-      t.text :vet_record
-      t.text :medication
-      t.text :dietary
-      t.string :profile_picture
+      t.string :vet_record
+      t.string :medications
+      t.string :dietary
+      t.references :user, null: false, foreign_key: true
 
       t.timestamps
     end
