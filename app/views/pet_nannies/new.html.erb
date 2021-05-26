@@ -1,0 +1,8 @@
+<h1>Become a pet nanny</h1>
+
+<div class = "p-5 form border border-grey mt-5 form-container">
+  <%= simple_form_for(@pet_nanny) do |f| %>
+    <%= f.input :introduction, input_html: { class: "" } %>
+    <%= f.button :submit, class: "btn btn-primary" %>
+  <% end %>
+</div>
