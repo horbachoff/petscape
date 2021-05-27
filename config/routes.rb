@@ -16,8 +16,6 @@ Rails.application.routes.draw do
 
   resources :pets, only: [:create, :show, :new, :index]
 
-  get '/nanny_dashboard/', to: 'nanny_dashboard#nanny_dashboard'
-
   get '/dashboard', to: 'dashboard#dashboard'
 
   patch '/bookings/:id/accept', to: 'bookings#accept'
