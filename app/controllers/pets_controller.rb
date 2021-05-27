@@ -9,8 +9,9 @@ class PetsController < ApplicationController
 
   def create
     @pet = Pet.new(pet_params)
+    @pet.user_id = current_user.id
     if @pet.save
-      redirect_to pet_path(@pet)
+      redirect_to pets_path
     else
       render :new
     end
@@ -23,6 +24,6 @@ class PetsController < ApplicationController
   private
 
   def pet_params
-    params.required(:pet).permit(:name, :profile_picture, :vet_record, :medications, :dietary)
+    params.required(:pet).permit(:name, :photo, :vet_record, :medications, :dietary)
   end
 end
