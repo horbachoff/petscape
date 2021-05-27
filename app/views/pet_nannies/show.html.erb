@@ -1,7 +1,16 @@
-<h1>
-  Let me take care of your pet!!! :)
-<%  %>
-</h1>
 
-<%=%>
-
+<div class="container pt-5 pb-5">
+  <div class="card-white p-5 text-center" id="introduction">
+    <h1>Hello, I'm <%= @pet_nanny.user.name %> </h1>
+    <img src="https://m.media-amazon.com/images/M/MV5BY2ViNDIwNmUtZGQ5Ni00MDYxLWI5YTktNWU1NGRlYWQ1ZDg0XkEyXkFqcGdeQXVyOTAyMDgxODQ@._V1_UY1200_CR166,0,630,1200_AL_.jpg" class="img-round"  alt="pet_name">
+    <p>
+      <span class="font-weight-bold">Address:</span> <%= @pet_nanny.user.address %>
+    </p>
+    <p>
+      <span class="font-weight-bold">Phone Number:</span> <%= @pet_nanny.user.phone_number %>
+    </p>
+    <p>
+      <span class="font-weight-bold">Email:</span> <%= @pet_nanny.user.email %>
+    </p>
+  </div>
+</div>
