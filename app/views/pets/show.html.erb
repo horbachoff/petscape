@@ -7,7 +7,7 @@
   <div class="container pt-5 pb-5">
       <div class="card-white p-5 text-center" id="introduction">
         <h1>Hello, I'm <%= @pet.name %> </h1>
-          <img src="https://longhaultrekkers.com/wp-content/uploads/2018/10/DSC_0434-1-600x403.jpg" class="img-round"  alt="pet_name">
+          <%= cl_image_tag @pet.photo.key, height: 300, width: 400, crop: :fill %>
         <p>
           <span class="font-weight-bold">Vet Record:</span> <%= @pet.vet_record %>
         </p>
