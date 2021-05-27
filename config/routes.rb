@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   get '/dashboard', to: 'dashboard#dashboard'
 
+  get '/about/', to: 'pages#about'
+
   patch '/bookings/:id/accept', to: 'bookings#accept'
   patch '/bookings/:id/decline', to: 'bookings#decline'
 
