@@ -4,9 +4,11 @@
     <div class="container">
       <div class="cards">
         <% @pet_nannies.each do |nanny| %>
-        <div class="card">
-          <%= nanny.user.name %>
-        </div>
+          <%= link_to nanny  do %>
+            <div class="card">
+              <%= nanny.user.name %>
+            </div>
+          <% end %>
         <% end %>
       </div>
       <div class="add-pet">
