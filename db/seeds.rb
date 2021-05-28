@@ -10,7 +10,7 @@ User.destroy_all
 PetNanny.destroy_all
 
 user1 = User.create!(
-  name: "Bob",
+  name: "Lisa",
   address: "123 Dog st",
   password: "123456",
   phone_number: "123456789",
