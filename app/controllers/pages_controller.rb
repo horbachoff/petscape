@@ -5,6 +5,10 @@ class PagesController < ApplicationController
 
   end
 
+  def bookings
+    @bookings = current_user.bookings
+  end
+
   def about
 
 
