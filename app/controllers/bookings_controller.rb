@@ -14,6 +14,6 @@ end
 private
 
 def booking_params
-  params.required(:booking).permit(:pet_nanny_id, :pet_id, :star_time, :end_time)
+  params.required(:booking).permit(:pet_nanny_id, :pet_id, :start_time, :end_time)
 end
 end
