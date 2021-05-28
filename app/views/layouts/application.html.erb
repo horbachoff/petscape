@@ -13,6 +13,9 @@
 
 <body>
   <div class="navbar navbar-expand-sm navbar-light navbar-petscape">
+    <div class="logo">
+      <%= cl_image_tag("14f2e99cd91947d087adf07bdc718c58_vgtntb.png") %>
+    </div>
     <%= link_to "#", class: "navbar-brand" do %>
     <% end %>
 
@@ -51,8 +54,8 @@
   <%= yield %>
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
-    <div class="d-flex align-items-end flex-column" style="height: 400px;">
-      <%= link_to "About Us", about_path, class: "mt-auto p-4" %>
-    </div>
-  </body>
-  </html>
+  <div class="d-flex align-items-end flex-column" style="height: 400px;">
+    <%= link_to "About Us", about_path, class: "mt-auto p-4" %>
+  </div>
+</body>
+</html>
