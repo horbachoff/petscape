@@ -18,6 +18,7 @@ class PetNanniesController < ApplicationController
 
   def show
     @pet_nanny = PetNanny.find(params[:id])
+    @booking = Booking.new
   end
 
   private
