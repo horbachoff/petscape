@@ -1,4 +1,5 @@
 class BookingsController < ApplicationController
+
   def create
     @booking = Booking.new(booking_params)
     @booking.user = current_user
@@ -13,6 +14,12 @@ class BookingsController < ApplicationController
   private
 
   def booking_params
+    params.required(:booking).permit(:pet_nanny_id, :pet_id, :star_time, :end_time)
+  end
+
+
+  def booking_params
     params.required(:booking).permit(:pet_nanny_id, :pet_id, :start_time, :end_time)
   end
+
 end
