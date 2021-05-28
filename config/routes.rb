@@ -9,6 +9,9 @@ Rails.application.routes.draw do
 
   get '/about/', to: 'pages#about'
 
+  get '/bookings', to: 'pages#bookings'
+
+
   patch '/bookings/:id/accept', to: 'bookings#accept'
   patch '/bookings/:id/decline', to: 'bookings#decline'
 

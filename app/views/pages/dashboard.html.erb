@@ -1,18 +1,20 @@
 <h1>Dashboard</h1>
 <div class="container">
 <h3 class="text-center">Welcome <%= "#{current_user.name}"%>!</h3>
-<div class="cards">
-  <% @user_pets.each do |pet| %>
-    <% if pet.photo.attached?  %>
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path pet.photo.key, height: 300, crop: :fill %>')">
-            <%= pet.name %>
-          </div>
-        <% else %>
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://www.austinpetsalive.org/assets/placeholder/dog-placeholder.svg')">
-            <%= pet.name %>
-          </div>
-        <% end %>
-  <% end %>
+<div class="container">
+  <div class="cards">
+    <% @user_pets.each do |pet| %>
+      <% if pet.photo.attached?  %>
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path pet.photo.key, height: 300, crop: :fill %>')">
+              <%= pet.name %>
+            </div>
+          <% else %>
+            <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://www.austinpetsalive.org/assets/placeholder/dog-placeholder.svg')">
+              <%= pet.name %>
+            </div>
+          <% end %>
+    <% end %>
+  </div>
 </div>
 <%= link_to "Add a new pet", new_pet_path, class: "button" %>
 <%= link_to "Find a pet nanny", pet_nannies_path, class: "button" %>
