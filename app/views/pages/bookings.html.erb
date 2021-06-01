@@ -24,17 +24,25 @@
     <% @bookings.each do |booking| %>
     <div class="col-9">
       <div class="card-product">
-        <div class="card-product-infos">
-          <h2> <%= booking.star_time %> </h2>
-          <i class="fas fa-dog"></i>
-          <p>Booking_ID <strong><%= booking.pet_nanny.user.name %></strong>, </p>
-
+        <div class="card-product-infos w-100">
+          <div class="d-flex justify-content-between w-100">
+            <div>
+              <h2> <%= booking.star_time %> </h2>
+              <i class="fas fa-dog"></i>
+              <p>Booking_ID <strong><%= booking.pet_nanny.user.name %></strong>, </p>
+            </div>
+            <div>
+              <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" style="border-radius: 50%;" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <%end%>
    </div>
 </div>
+
+
 
   <!--   <div class="col-9">
       <div class="card-product">
