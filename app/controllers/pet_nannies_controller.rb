@@ -1,6 +1,10 @@
 class PetNanniesController < ApplicationController
   def index
-    @pet_nannies = PetNanny.all
+    if params[:query].present?
+      @pet_nannies = PetNanny.eager_load(:user).where("users.address ILIKE ?", "%#{params[:query]}%")
+    else
+      @pet_nannies = PetNanny.all
+    end
   end
 
   def new
