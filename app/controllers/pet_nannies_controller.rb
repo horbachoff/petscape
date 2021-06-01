@@ -23,6 +23,7 @@ class PetNanniesController < ApplicationController
   def show
     @pet_nanny = PetNanny.find(params[:id])
     @booking = Booking.new
+    @bookings = Booking.eager_load(:pet_nanny).where("pet_nannies.id = '#{@pet_nanny.id}'")
   end
 
   private
