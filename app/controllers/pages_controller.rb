@@ -11,7 +11,7 @@ class PagesController < ApplicationController
   def about
   end
 
-  
+
   def pet_owners
   end
 

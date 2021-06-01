@@ -1,7 +1,10 @@
 class PetNanniesController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:index]
+
+
   def index
     if params[:query].present?
-      @pet_nannies = PetNanny.eager_load(:user).where("users.address ILIKE ?", "%#{params[:query]}%")
+      @pet_nannies = PetNanny.eager_load(:user).where("users.city ILIKE ?", "%#{params[:query]}%")
     else
       @pet_nannies = PetNanny.all
     end
