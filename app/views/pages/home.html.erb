@@ -1,3 +1,11 @@
+<%= form_tag pet_nannies_path, method: :get do %>
+<%= text_field_tag :query,
+params[:query],
+class: "form-control",
+  placeholder: "Location"
+  %>
+  <%= submit_tag "Search", class: "btn btn-primary" %>
+  <% end %>
 <h1>What we do</h1>
   <p>
     Petscape is the first market place that connects pet owners with qualified,
@@ -7,13 +15,3 @@
     in Santorini (Greece) because you can’t find a nanny to care for your pet.
     Travel stress free, pet free!
   </p>
-
-  <%= form_tag pet_nannies_path, method: :get do %>
-  <%= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-    placeholder: "Location"
-  %>
-  <%= submit_tag "Search", class: "btn btn-primary" %>
-<% end %>
-
