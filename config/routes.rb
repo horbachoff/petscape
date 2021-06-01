@@ -24,6 +24,6 @@ Rails.application.routes.draw do
 
 
   resources :bookings, only: [:new, :create] do
-    resources :pet_reviews, only: [:new, :create]
+    resources :pet_nanny_reviews, only: [:new, :create]
   end
 end
