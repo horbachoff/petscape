@@ -14,4 +14,9 @@ class User < ApplicationRecord
   def pet_nanny?
     pet_nannies.any?
   end
+
+  def self.pet_nannies
+    user_ids = PetNanny.pluck(:user_id)
+    User.where(id: user_ids)
+  end
 end
