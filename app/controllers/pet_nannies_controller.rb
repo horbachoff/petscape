@@ -3,11 +3,12 @@ class PetNanniesController < ApplicationController
 
   def index
     if params[:query].present? || params[:start_date].present? || params[:end_date].present?
-
-      query_string = "users.city ILIKE :query AND start_date <= :start_date AND end_date >= :start_date AND end_date >= :end_date"
-
-      @pet_nannies = PetNanny.eager_load(:user).where(query_string, query: "%#{params[:query]}%", start_date: params[:start_date], end_date: params[:end_date])
-
+      query_string = "users.city ILIKE :query AND start_date <= :start_date
+                      AND end_date >= :start_date AND end_date >= :end_date"
+      @pet_nannies = PetNanny.eager_load(:user).where(query_string,
+                                                      query: "%#{params[:query]}%",
+                                                      start_date: params[:start_date],
+                                                      end_date: params[:end_date])
     else
       @pet_nannies = PetNanny.all
     end
