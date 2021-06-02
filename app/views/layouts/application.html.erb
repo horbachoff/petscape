@@ -14,7 +14,7 @@
 <body>
   <div class="navbar navbar-expand-sm navbar-light navbar-petscape">
     <div class="logo">
-      <%= cl_image_tag("14f2e99cd91947d087adf07bdc718c58_vgtntb.png") %>
+      <%= link_to cl_image_tag("14f2e99cd91947d087adf07bdc718c58_vgtntb.png"), root_path %>
     </div>
     <%= link_to "#", class: "navbar-brand" do %>
     <% end %>
@@ -25,16 +25,7 @@
 
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <%= link_to "Home", root_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Pet Owner", pet_nannies_path, class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Pet Nanny", new_pet_nanny_path, class: "nav-link" %>
-        </li>
+      <ul class="navbar-nav mr-auto">           
         <% if user_signed_in? %>
           <li class="nav-item dropdown">
             <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
