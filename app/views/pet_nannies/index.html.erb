@@ -10,3 +10,10 @@
       <% end %>
     </div>
   </div>
+
+<div id="map"
+    style="width: 100%; height: 600px;"
+    data-markers="<%= @markers.to_json %>"
+    data-mapbox-api-key="<%= ENV['pk.eyJ1IjoibW9tbzkyIiwiYSI6ImNrb2VpMGo3ODBhbHIyd3A1YWZuN25wdzcifQ.MKAgjPuWD2U1HmCyHydg9A
+'] %>">     
+</div>
