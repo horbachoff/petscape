@@ -12,6 +12,12 @@ class PetNanniesController < ApplicationController
     else
       @pet_nannies = PetNanny.all
     end
+    @markers = @pet_nannies.geocoded.map do |pet_nanny|
+      {
+        lat: pet_nanny.latitude,
+        lng: pet_nanny.longitude
+      }
+    end
   end
 
   def new
