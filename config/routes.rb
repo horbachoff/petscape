@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   devise_for :users
 
-  get '/nanny_dashboard/', to: 'pages#nanny_dashboard'
+  get '/pet_nanny_dashboard/', to: 'pages#pet_nanny_dashboard'
 
-  get '/dashboard', to: 'pages#dashboard'
+  get '/pet_owner_dashboard', to: 'pages#pet_owner_dashboard'
 
   get '/about/', to: 'pages#about'
 
@@ -25,5 +25,6 @@ Rails.application.routes.draw do
 
   resources :bookings, only: [:new, :create] do
     resources :pet_nanny_reviews, only: [:new, :create]
+    resources :pet_reviews, only: [:new, :create]
   end
 end
