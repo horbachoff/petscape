@@ -15,8 +15,15 @@ class PagesController < ApplicationController
   def pet_owners
   end
 
-  def dashboard
+  def pet_owner_dashboard
     @user_pets = current_user.pets
+  end
+
+  def pet_nanny_dashboard
+    if current_user.pet_nanny?
+      pet_nanny = current_user.pet_nannies.first
+      @bookings = pet_nanny.bookings
+    end
   end
 end
 

@@ -3,8 +3,8 @@
 <div class="p-5 form mt-5 form-container">
   <%= simple_form_for(@pet_nanny) do |f| %>
     <%= f.input :introduction, input_html: { class: "" } %>
-    <%= f.input :introduction, as: :date, html5: true, :label => "I am willing to pet sit from"%>
-    <%= f.input :introduction, as: :date, html5: true, :label => "to"%>
+    <%= f.input :start_date, as: :date, html5: true, :label => "I am willing to pet sit from"%>
+    <%= f.input :end_date, as: :date, html5: true, :label => "to"%>
     <%= f.button :submit, class: "button" %>
   <% end %>
 </div>
