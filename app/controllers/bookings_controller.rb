@@ -7,6 +7,7 @@ class BookingsController < ApplicationController
     if @booking.save
       redirect_to @booking.pet_nanny
     else
+      @bookings = Booking.eager_load(:pet_nanny).where("pet_nannies.id = '#{@pet_nanny.id}'")
       render "pet_nannies/show"
     end
   end
