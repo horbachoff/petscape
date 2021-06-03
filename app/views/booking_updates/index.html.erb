@@ -1,0 +1,20 @@
+<h1>BookingUpdates</h1>
+<ul>
+<% @booking_updates.each do |update| %>
+  <li><%= update.content %></li>
+  <% if update.media.attached? %>
+    <% if url_for(update.media).match?(/.+(mp4|MOV|webm)/) %>
+      <%= url_for(update.media) %>
+          <li><video controls><source src="<%= cl_video_path update.media.key %>"></video></li>
+    <% else %>
+      <li><%= cl_image_tag update.media.key %></li>
+    <% end %>
+  <% end  %>
+<% end %>
+</ul>
+
+<%= simple_form_for [@booking, @booking_update] do |f| %>
+  <%= f.input :content %>
+  <%= f.input :media, as: :file %>
+  <%= f.submit%>
+<% end %>
