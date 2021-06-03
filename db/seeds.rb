@@ -11,8 +11,7 @@ PetNanny.destroy_all
 
 user1 = User.create!(
   name: "Lisa",
-  address: "123 Dog st",
-  city: "Mexico City",
+  address: "723 Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
   phone_number: "123456789",
   email: "dogman92@cat.com"
@@ -20,8 +19,7 @@ user1 = User.create!(
 
 user2 = User.create!(
   name: "Jack",
-  address: "123 Armadillo st",
-  city: "Los Angeles",
+  address: "1572 Locust St, Pasadena, CA",
   password: "123456",
   phone_number: "47583923",
   email: "catman69@dog.com"
@@ -29,13 +27,11 @@ user2 = User.create!(
 
 user3 = User.create!(
   name: "Ignacio",
-  address: "123 Kangaroo st",
-  city: "Shangai",
+  address: '16 Villa Gaudelet, Paris',
   password: "123456",
   phone_number: "123654789",
   email: "manman92@animales.com"
 )
-
 
 pet1 = Pet.create!(
   name: "Spike",
@@ -63,16 +59,21 @@ pet3 = Pet.create!(
 
 nanny1 = PetNanny.create!(
   introduction: "Blah blah blah blah blah",
+  start_date: '2021-06-01',
+  end_date: '2021-06-30',
   user: user1
 )
 
 nanny2 = PetNanny.create!(
   introduction: "Blah blah blah blah blah",
+  start_date: '2021-06-01',
+  end_date: '2021-07-30',
   user: user2
 )
 
 nanny3 = PetNanny.create!(
   introduction: "Blah blah blah blah blah",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
   user: user3
 )
-
