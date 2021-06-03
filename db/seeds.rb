@@ -11,7 +11,7 @@ PetNanny.destroy_all
 
 user1 = User.create!(
   name: "Lisa",
-  address: "723 Kensington Rd, Los Angeles, CA",
+  address: "723 Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
   phone_number: "123456789",
   email: "dogman92@cat.com"
@@ -19,7 +19,7 @@ user1 = User.create!(
 
 user2 = User.create!(
   name: "Jack",
-  address: "723 Kensington Rd, Los Angeles, CA",
+  address: "1572 Locust St, Pasadena, CA",
   password: "123456",
   phone_number: "47583923",
   email: "catman69@dog.com"
