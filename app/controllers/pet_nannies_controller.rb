@@ -3,21 +3,28 @@ class PetNanniesController < ApplicationController
 
   def index
     if params[:query].present? || params[:start_date].present? || params[:end_date].present?
-      query_string = "users.address ILIKE :query AND start_date <= :start_date
-                      AND end_date >= :start_date AND end_date >= :end_date"
-      @pet_nannies = PetNanny.eager_load(:user).where(query_string,
-                                                      query: "%#{params[:query]}%",
+      query_string = "pet_nannies.start_date <= :start_date
+                      AND pet_nannies.end_date >= :start_date AND pet_nannies.end_date >= :end_date"
+      @users = User.includes(:pet_nannies).joins(:pet_nannies).where(query_string,
+                                                      # query: "%#{params[:query]}%",
                                                       start_date: params[:start_date],
                                                       end_date: params[:end_date])
+
+      # users.address ILIKE :query AND
+      @users = @users.geocoded.near(params[:query], 30)
+      @pet_nannies = []
+      @users.each do |user|
+        @pet_nannies.concat(user.pet_nannies)
+      end
     else
       @pet_nannies = PetNanny.all
     end
-    nanny_users = User.pet_nannies
+    # nanny_users = User.pet_nannies
 
-    @markers = nanny_users.geocoded.map do |pet_nanny|
+    @markers = @pet_nannies.map do |pet_nanny|
       {
-        lat: pet_nanny.latitude,
-        lng: pet_nanny.longitude
+        lat: pet_nanny.user.latitude,
+        lng: pet_nanny.user.longitude
       }
     end
   end
