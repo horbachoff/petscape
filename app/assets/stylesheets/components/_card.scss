@@ -1,4 +1,5 @@
 .card {
+
   background-size: cover;
   background-position: center;
   height: 150px;
@@ -15,9 +16,11 @@
 
 .cards {
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr;
 grid-gap: 16px;
-flex-grow: 1;
+flex-grow: 2 !important;
+padding: 16px;
+width: 50vw;
 }
 
 .card-product {
