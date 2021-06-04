@@ -27,7 +27,7 @@
   <div class="cards">
     <% @pet_nannies.each do |nanny| %>
       <%= link_to nanny  do %>
-        <div class="card">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/nachoal/image/upload/v1622836775/test.jpg)">
           <%= nanny.user.name %>
         </div>
       <% end %>

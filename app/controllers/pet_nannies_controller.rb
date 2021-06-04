@@ -25,7 +25,7 @@ class PetNanniesController < ApplicationController
       {
         lat: pet_nanny.user.latitude,
         lng: pet_nanny.user.longitude,
-        image_url: helpers.asset_url('donkey.png')
+        image_url: helpers.asset_url('pet_icon.png')
       }
     end
   end

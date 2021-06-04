@@ -35,7 +35,7 @@ user3 = User.create!(
 )
 
 user4 = User.create!(
-  name: "Ignacio",
+  name: "Pedro",
   address: 'Mexico City',
   password: "123456",
   phone_number: "123654789",
@@ -43,7 +43,7 @@ user4 = User.create!(
 )
 
 user5 = User.create!(
-  name: "Ignacio",
+  name: "Titch",
   address: 'Los Angeles',
   password: "123456",
   phone_number: "123654789",
@@ -51,7 +51,7 @@ user5 = User.create!(
 )
 
 user6 = User.create!(
-  name: "Ignacio",
+  name: "Diego",
   address: 'Los Angeles',
   password: "123456",
   phone_number: "123654789",
@@ -59,7 +59,7 @@ user6 = User.create!(
 )
 
 user7 = User.create!(
-  name: "Ignacio",
+  name: "Juan",
   address: 'Los Angeles',
   password: "123456",
   phone_number: "123654789",
