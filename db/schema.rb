@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_03_173318) do
+ActiveRecord::Schema.define(version: 2021_06_03_215319) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -68,6 +68,18 @@ ActiveRecord::Schema.define(version: 2021_06_03_173318) do
     t.index ["user_id"], name: "index_bookings_on_user_id"
   end
 
+  create_table "orders", force: :cascade do |t|
+    t.string "state"
+    t.integer "amount_cents", default: 0, null: false
+    t.string "checkout_session_id"
+    t.bigint "user_id", null: false
+    t.bigint "pet_nanny_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["pet_nanny_id"], name: "index_orders_on_pet_nanny_id"
+    t.index ["user_id"], name: "index_orders_on_user_id"
+  end
+
   create_table "pet_nannies", force: :cascade do |t|
     t.text "introduction"
     t.bigint "user_id", null: false
@@ -75,6 +87,7 @@ ActiveRecord::Schema.define(version: 2021_06_03_173318) do
     t.datetime "updated_at", precision: 6, null: false
     t.date "start_date"
     t.date "end_date"
+    t.integer "rate_cents", default: 0, null: false
     t.index ["user_id"], name: "index_pet_nannies_on_user_id"
   end
 
@@ -129,6 +142,8 @@ ActiveRecord::Schema.define(version: 2021_06_03_173318) do
   add_foreign_key "bookings", "pet_nannies"
   add_foreign_key "bookings", "pets"
   add_foreign_key "bookings", "users"
+  add_foreign_key "orders", "pet_nannies"
+  add_foreign_key "orders", "users"
   add_foreign_key "pet_nannies", "users"
   add_foreign_key "pet_nanny_reviews", "bookings"
   add_foreign_key "pet_reviews", "bookings"
