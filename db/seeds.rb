@@ -35,32 +35,32 @@ user3 = User.create!(
 )
 
 user4 = User.create!(
-  name: "Ignacio",
-  address: 'Mexico City',
+  name: "Charly",
+  address: 'Av. Álvaro Obregón 213, Roma Nte., Cuauhtémoc, 06700 Ciudad de México, CDMX',
   password: "123456",
   phone_number: "123654789",
   email: "manman93@animales.com"
 )
 
 user5 = User.create!(
-  name: "Ignacio",
-  address: 'Los Angeles',
+  name: "Mariana",
+  address: 'Av. Juárez S/N, Centro Histórico de la Cdad. de México, Centro, Cuauhtémoc, 06050 Ciudad de México, CDMX',
   password: "123456",
   phone_number: "123654789",
   email: "manman94@animales.com"
 )
 
 user6 = User.create!(
-  name: "Ignacio",
-  address: 'Los Angeles',
+  name: "Alex",
+  address: 'Plaza de la República S/N, Tabacalera, Cuauhtémoc, 06030 Ciudad de México, CDMX',
   password: "123456",
   phone_number: "123654789",
   email: "manman95@animales.com"
 )
 
 user7 = User.create!(
-  name: "Ignacio",
-  address: 'Los Angeles',
+  name: "Tania",
+  address: 'Londres 247, Del Carmen, Coyoacán, 04100 Ciudad de México, CDMX',
   password: "123456",
   phone_number: "123654789",
   email: "manman96@animales.com"
@@ -116,28 +116,32 @@ nanny3 = PetNanny.create!(
 
 nanny4 = PetNanny.create!(
   introduction: "Blah blah blah blah blah",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
+  rate_cents: 2900,
   user: user4
 )
 
 nanny5 = PetNanny.create!(
   introduction: "Blah blah blah blah blah",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
+  rate_cents: 2600,
   user: user5
 )
 
 nanny6 = PetNanny.create!(
   introduction: "Blah blah blah blah blah",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
+  rate_cents: 2900,
   user: user6
 )
 
 nanny7 = PetNanny.create!(
   introduction: "Blah blah blah blah blah",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
+  rate_cents: 2700,
   user: user7
 )
