@@ -1,34 +1,73 @@
-<h1>What we do</h1>
-  <p class = "mx-5 mt-2 text-justify">
-    Petscape is the first market place that connects pet owners with qualified,
-    pet loving nannies who are eager to care for your pet while you’re on travel.
-    Simple log on to the portal, put in your location and pet’s info, and see all
-    of the qualified pet nannies in your area. Don’t miss out on your honey moon
-    in Santorini (Greece) because you can’t find a nanny to care for your pet.
-    Travel stress free, pet free!
-  </p>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);">
 
-  <div class = "container mt-5">
-    <%= form_tag pet_nannies_path, method: :get, id: "search-form" do %>
-      <%= text_field_tag :query,
-        params[:query],
-        class: "form-control my-2",
-        placeholder: "address, city, zip",
-        required: "required"
-      %>
-      <%= date_field_tag :start_date,
-        params[:start_date],
-        class: "form-control my-2",
-        placeholder: "start date",
-        required: "required"
-      %>
-      <%= date_field_tag :end_date,
-        params[:end_date],
-        class: "form-control my-2",
-        placeholder: "end date",
-        required: "required"
-      %>
-      <%= submit_tag "Search", class: "btn btn-primary" %>
+
+<div class="container">
+
+
+  <h1>What we do</h1>
+
+    <p class="mb-4">
+      <strong>
+      Petscape is the first market place that connects pet owners with qualified,
+      pet loving nannies who are eager to care for your pet while you’re on travel.
+      Simple log on to the portal, put in your location and pet’s info, and see all
+      of the qualified pet nannies in your area. Don’t miss out on your honey moon
+      in Santorini (Greece) because you can’t find a nanny to care for your pet.
+
+      Travel stress free, pet free!
+           </strong>
+    </p>
+
+    <div class="row">
+
+        <div class="col-4">
+          <p class="font-weight-bold">
+            Location
+          </p>
+        <%= form_tag pet_nannies_path, method: :get, id: "search-form" do %>
+        <%= text_field_tag :query,
+          params[:query],
+          class: "form-control",
+          placeholder: "address, city, zip",
+          required: "required"
+        %>
+        </div>
+
+        <div class="col-4">
+          <p class="font-weight-bold">
+            check in
+          </p>
+        <%= date_field_tag :start_date,
+          params[:start_date],
+          class: "form-control",
+          placeholder: "start date",
+          required: "required"
+        %>
+        </div>
+
+        <div class="col-4">
+          <p class="font-weight-bold">
+            check out
+          </p>
+        <%= date_field_tag :end_date,
+          params[:end_date],
+          class: "form-control",
+          placeholder: "end date",
+          required: "required"
+        %>
+        </div>
+
+ </div>
+        <div class="col-12 text-center">
+        <%= submit_tag "Search", class: "button" %>
+        </div>
+
     <% end %>
-  </div>
+
+
+</div>
+
+</div>
+
+
 
