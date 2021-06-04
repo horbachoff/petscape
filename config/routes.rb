@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'booking_updates/new'
+  get 'booking_updates/index'
   root to: 'pages#home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   devise_for :users
@@ -27,6 +29,7 @@ Rails.application.routes.draw do
 
 
   resources :bookings, only: [:new, :create] do
+    resources :booking_updates, only: [:new, :create, :index]
     resources :pet_nanny_reviews, only: [:new, :create]
     resources :pet_reviews, only: [:new, :create]
   end

@@ -5,13 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
 Pet.destroy_all
-User.destroy_all
 PetNanny.destroy_all
+User.destroy_all
 
 user1 = User.create!(
   name: "Lisa",
-  address: "723 Kensington Rd, Los Angeles, CA, 90026",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
   phone_number: "123456789",
   email: "dogman92@cat.com"
