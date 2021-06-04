@@ -24,7 +24,8 @@ class PetNanniesController < ApplicationController
     @markers = @pet_nannies.map do |pet_nanny|
       {
         lat: pet_nanny.user.latitude,
-        lng: pet_nanny.user.longitude
+        lng: pet_nanny.user.longitude,
+        image_url: helpers.asset_url('donkey.png')
       }
     end
   end
