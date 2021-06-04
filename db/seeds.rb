@@ -61,6 +61,7 @@ nanny1 = PetNanny.create!(
   introduction: "Blah blah blah blah blah",
   start_date: '2021-06-01',
   end_date: '2021-06-30',
+  rate_cents: 2500,
   user: user1
 )
 
@@ -68,6 +69,7 @@ nanny2 = PetNanny.create!(
   introduction: "Blah blah blah blah blah",
   start_date: '2021-06-01',
   end_date: '2021-07-30',
+  rate_cents: 2800,
   user: user2
 )
 
@@ -75,5 +77,6 @@ nanny3 = PetNanny.create!(
   introduction: "Blah blah blah blah blah",
   start_date: '2021-07-01',
   end_date: '2021-07-31',
+  rate_cents: 3000,
   user: user3
 )

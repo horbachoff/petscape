@@ -30,4 +30,10 @@
       <%= f.submit "Book", class: "btn btn-info" %>
       <% end %>
   </div>
+
+  <%= form_tag orders_path do %>
+    <%= hidden_field_tag 'pet_nanny_id', @pet_nanny.id %>
+    <%= submit_tag 'Purchase', class: 'btn btn-primary' %>
+  <% end %>
+
 </div>

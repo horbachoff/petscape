@@ -11,6 +11,9 @@ Rails.application.routes.draw do
 
   get '/bookings', to: 'pages#bookings'
 
+  resources :orders, only: [:show, :create] do
+    resources :payments, only: :new
+  end
 
   patch '/bookings/:id/accept', to: 'bookings#accept'
   patch '/bookings/:id/decline', to: 'bookings#decline'
@@ -27,4 +30,6 @@ Rails.application.routes.draw do
     resources :pet_nanny_reviews, only: [:new, :create]
     resources :pet_reviews, only: [:new, :create]
   end
+
+  mount StripeEvent::Engine, at: '/stripe-webhooks'
 end
