@@ -39,3 +39,6 @@ document.addEventListener('turbolinks:load', () => {
 require("trix")
 require("@rails/actiontext")
 
+import { initStarRating } from '../plugins/init_star_rating';
+
+initStarRating();
