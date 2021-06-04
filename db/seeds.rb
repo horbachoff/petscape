@@ -34,6 +34,38 @@ user3 = User.create!(
   email: "manman92@animales.com"
 )
 
+user4 = User.create!(
+  name: "Ignacio",
+  address: 'Mexico City',
+  password: "123456",
+  phone_number: "123654789",
+  email: "manman93@animales.com"
+)
+
+user5 = User.create!(
+  name: "Ignacio",
+  address: 'Los Angeles',
+  password: "123456",
+  phone_number: "123654789",
+  email: "manman94@animales.com"
+)
+
+user6 = User.create!(
+  name: "Ignacio",
+  address: 'Los Angeles',
+  password: "123456",
+  phone_number: "123654789",
+  email: "manman95@animales.com"
+)
+
+user7 = User.create!(
+  name: "Ignacio",
+  address: 'Los Angeles',
+  password: "123456",
+  phone_number: "123654789",
+  email: "manman96@animales.com"
+)
+
 pet1 = Pet.create!(
   name: "Spike",
   vet_record: "Recovered from parvovirus",
@@ -80,4 +112,32 @@ nanny3 = PetNanny.create!(
   end_date: '2021-07-31',
   rate_cents: 3000,
   user: user3
+)
+
+nanny4 = PetNanny.create!(
+  introduction: "Blah blah blah blah blah",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  user: user4
+)
+
+nanny5 = PetNanny.create!(
+  introduction: "Blah blah blah blah blah",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  user: user5
+)
+
+nanny6 = PetNanny.create!(
+  introduction: "Blah blah blah blah blah",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  user: user6
+)
+
+nanny7 = PetNanny.create!(
+  introduction: "Blah blah blah blah blah",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  user: user7
 )
