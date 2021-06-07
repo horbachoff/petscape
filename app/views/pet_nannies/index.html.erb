@@ -1,33 +1,54 @@
-<h1>Find a Nanny</h1>
-  <div class="container">
-  <%= form_tag pet_nannies_path, method: :get, class: "mt-3 mb-3", id: "search-form" do %>
-   <%= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-    placeholder: "Write a city",
-    required: "required"
-  %>
-  <%= date_field_tag :start_date,
-    params[:start_date],
-    class: "form-control",
-    placeholder: "start date",
-    required: "required"
-  %>
-  <%= date_field_tag :end_date,
-    params[:end_date],
-    class: "form-control",
-    placeholder: "end date",
-    required: "required"
-  %>
-  <%= submit_tag "Search", class: "button" %>
-<% end %>
-</div>
+<div class="container">
+  <h1>Find a Nanny</h1>
+  <div class="row">
+    <div class="col-4">
+      <p class="font-weight-bold">
+        Location
+      </p>
+      <%= form_tag pet_nannies_path, method: :get, id: "search-form" do %>
+      <%= text_field_tag :query,
+      params[:query],
+      class: "form-control",
+        placeholder: "address, city, zip",
+        required: "required"
+        %>
+      </div>
+
+      <div class="col-4">
+        <p class="font-weight-bold">
+          check in
+        </p>
+        <%= date_field_tag :start_date,
+        params[:start_date],
+        class: "form-control",
+          placeholder: "start date",
+          required: "required"
+          %>
+        </div>
+
+        <div class="col-4">
+          <p class="font-weight-bold">
+            check out
+          </p>
+          <%= date_field_tag :end_date,
+          params[:end_date],
+          class: "form-control",
+            placeholder: "end date",
+            required: "required"
+            %>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <%= submit_tag "Search", class: "button" %>
+        </div>
+        <% end %>
+      </div>
 
 <div class="content">
   <div class="cards">
     <% @pet_nannies.each do |nanny| %>
       <%= link_to nanny  do %>
-        <div class="card">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/nachoal/image/upload/v1622836775/test.jpg)">
           <%= nanny.user.name %>
         </div>
       <% end %>
