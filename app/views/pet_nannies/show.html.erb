@@ -1,42 +1,58 @@
 <div class="container p-5">
-  <div class="card-white p-5 text-center" id="introduction">
-    <h1>Hello, I'm <%= @pet_nanny.user.name %> </h1>
-    <img src="https://m.media-amazon.com/images/M/MV5BY2ViNDIwNmUtZGQ5Ni00MDYxLWI5YTktNWU1NGRlYWQ1ZDg0XkEyXkFqcGdeQXVyOTAyMDgxODQ@._V1_UY1200_CR166,0,630,1200_AL_.jpg" class="img-round"  alt="pet_name">
-    <p>
-      <span class="font-weight-bold">Address:</span> <%= @pet_nanny.user.address %>
-    </p>
-    <p>
-      <span class="font-weight-bold">Phone Number:</span> <%= @pet_nanny.user.phone_number %>
-    </p>
-    <p>
-      <span class="font-weight-bold">Email:</span> <%= @pet_nanny.user.email %>
-    </p>
-    <% @bookings.each do |booking|%>
-      <div>
-        <% if booking.user == current_user  %>
-          <%= booking.pet.name %>
-          <%= booking.star_time %>
-          <%= booking.end_time %>
-          <%= booking.status %>
-        <% end %>
-      </div>
-    <% end %>
-      <h3 class="mt-5">Book me</h3>
-      <%= simple_form_for @booking  do |f|  %>
-      <%= f.input :pet_id, collection: current_user.pets, required: true %>
-      <%= f.input :star_time, wrapper_html: { class: 'flex-select' }, as: :date, html5: true, required: true, label: "Start Date" %>
-      <%= f.input :end_time, wrapper_html: { class: 'flex-select' }, as: :date, html5: true, required: true, label: "End Date" %>
-      <%= f.input :pet_nanny_id, input_html: {value: @pet_nanny.id}, as: :hidden  %>
-      <%= f.submit "Book", class: "button" %>
+ <div class="d-flex card-white">
+   <div class="p-5 flex-even text-center">
+      <h1>Hello, I'm <%= @pet_nanny.user.name %></h1>
+      <img src="https://m.media-amazon.com/images/M/MV5BY2ViNDIwNmUtZGQ5Ni00MDYxLWI5YTktNWU1NGRlYWQ1ZDg0XkEyXkFqcGdeQXVyOTAyMDgxODQ@._V1_UY1200_CR166,0,630,1200_AL_.jpg" class="profile-circle m-3"  alt="pet_name">
+      <p class="mt-3">
+        <span class="font-weight-bold">Address:</span> <%= @pet_nanny.user.address %>
+      </p>
+      <p>
+        <span class="font-weight-bold">Phone Number:</span> <%= @pet_nanny.user.phone_number %>
+      </p>
+      <p>
+        <span class="font-weight-bold">Email:</span> <%= @pet_nanny.user.email %>
+      </p>
+      <% @bookings.each do |booking|%>
+        <div>
+          <% if booking.user == current_user  %>
+            <%= booking.pet.name %>
+            <%= booking.star_time %>
+            <%= booking.end_time %>
+            <%= booking.status %>
+          <% end %>
+        </div>
       <% end %>
-
-      <div class = "m-3">
-        <%= form_tag orders_path do %>
-          <%= hidden_field_tag 'pet_nanny_id', @pet_nanny.id %>
-          <%= submit_tag 'Purchase', class: 'button' %>
+        <h3 class="mt-5">Book me</h3>
+        <%= simple_form_for @booking  do |f|  %>
+        <%= f.input :pet_id, collection: current_user.pets, required: true %>
+        <%= f.input :star_time, wrapper_html: { class: 'flex-select' }, as: :date, html5: true, required: true, label: "Start Date" %>
+        <%= f.input :end_time, wrapper_html: { class: 'flex-select' }, as: :date, html5: true, required: true, label: "End Date" %>
+        <%= f.input :pet_nanny_id, input_html: {value: @pet_nanny.id}, as: :hidden  %>
+        <%= f.submit "Book", class: "button" %>
         <% end %>
+
+        <div>
+          <%= form_tag orders_path do %>
+            <%= hidden_field_tag 'pet_nanny_id', @pet_nanny.id %>
+            <%= submit_tag 'Purchase', class: 'button' %>
+          <% end %>
+        </div>
+    </div>
+    <div class="flex-even d-flex flex-column justify-content-center align-items-center">
+      <div class="text-left">
+      <h2 class="text-center">Introduction</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, error
+        dolorem quaerat dignissimos sequi quod eaque reprehenderit nam, ducimus
+        facilis culpa, cumque. Quam, error rerum nesciunt eaque tempora accusamus qui?
+      </p>
       </div>
+      <div class="reviews mt-5">
+         <% @pet_nanny.reviews.first(3).each do |review| %>
+          <%= review.content %>
+          <%= review.rating %>
+          <% end %>
+      </div>
+    </div>
   </div>
-
-
 </div>

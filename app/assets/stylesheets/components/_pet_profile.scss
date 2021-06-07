@@ -8,3 +8,14 @@
   width: 150px;
   height: 150px;
 }
+
+.flex-even {
+  flex: 1;
+}
+
+.profile-circle {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
