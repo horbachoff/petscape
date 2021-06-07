@@ -49,8 +49,8 @@
       </div>
       <div class="reviews mt-5">
          <% @pet_nanny.reviews.first(3).each do |review| %>
-          <%= review.content %>
-          <%= review.rating %>
+          "<%= review.content %>"
+          <%= select_tag "pet_nanny_review", options_for_select([ 1, 2, 3, 4, 5], review.rating), disabled: true, id:"pet_nanny_review_rating" %>
           <% end %>
       </div>
     </div>
