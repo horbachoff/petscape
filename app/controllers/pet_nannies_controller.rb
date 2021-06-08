@@ -1,21 +1,30 @@
 class PetNanniesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index]
 
+  # def no_accents(str)
+  #   str.gsub(/á/, "a").gsub(/é/, "e").gsub(/í/, "i").gsub(/ó/, "o").gsub(/ú/, "u")
+  #   .gsub(/Á/, "A").gsub(/É/, "E").gsub(/Í/, "I").gsub(/Ó/, "O").gsub(/Ú/, "U")
+  # end  
+
   def index
     if params[:query].present? || params[:start_date].present? || params[:end_date].present?
       query_string = "pet_nannies.start_date <= :start_date
-                      AND pet_nannies.end_date >= :start_date AND pet_nannies.end_date >= :end_date"
+                      AND pet_nannies.end_date >= :start_date AND pet_nannies.end_date >= :end_date
+                      AND (users.address) ILIKE :query"
+
       @users = User.includes(:pet_nannies).joins(:pet_nannies).where(query_string,
-                                                      # query: "%#{params[:query]}%",
+                                                      query: "%#{params[:query]}%",
                                                       start_date: params[:start_date],
                                                       end_date: params[:end_date])
-
-      # users.address ILIKE :query AND
+        
       @users = @users.geocoded.near(params[:query], 30)
+      # @users = @users.geocoded
       @pet_nannies = []
+
       @users.each do |user|
-        @pet_nannies.concat(user.pet_nannies)
+        @pet_nannies << user.pet_nannies
       end
+      @pet_nannies= @pet_nannies.flatten
     else
       @pet_nannies = PetNanny.all
     end

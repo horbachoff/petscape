@@ -36,6 +36,8 @@ gem 'devise'
 
 gem "active_model_serializers"
 
+gem 'pg_search', '~> 2.3.0'
+
 gem 'geocoder'
 gem 'money-rails', '~>1.12'
 gem 'stripe'
