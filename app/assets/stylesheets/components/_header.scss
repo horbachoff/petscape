@@ -20,7 +20,7 @@ p {
   width: 100%;
   padding:30px 0;
   text-align: center;
-  background: #33cccc;
+  background: $primary;
   color: white;
 }
 
@@ -39,6 +39,6 @@ p {
 
 .btn-bgstroke:hover {
   background-color: white;
-  color: #33cccc;
+  color: $primary;
   text-decoration: none;
 }
