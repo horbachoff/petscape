@@ -1,19 +1,21 @@
 <h1>Animals that'll pay your utility bills!</h1>
     <div class="container">
-      <div class="cards">
+      <div class="row">
         <% @pets.each do |pet| %>
-
-        <% if pet.photo.attached?  %>
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path pet.photo.key, height: 300, crop: :fill %>')">
-            <%= pet.name %>
+          <div class="col-6">
+            <div class="pet-card text-left">
+              <% if pet.photo.attached?  %>
+                <img class="pet-card-avatar" src="<%= cl_image_path pet.photo.key, crop: :fill %>" alt="">
+              <% else %>
+                <img class=<%= link_to cl_image_tag("14f2e99cd91947d087adf07bdc718c58_1_ozq2xn.png"), root_path %>
+              <% end %>
+              <h4 class="pet-name"><%= pet.name %></h4>
+              <p class="pet-info-section text-left"><span class="emoji">📔</span><span class="bold">Vet Record:</span><%= pet.vet_record %></p>
+              <p class="pet-info-section text-left"><span class="emoji">💊</span><span class="bold">Medications:</span><%= pet.medications %></p>
+              <p class="pet-info-section text-left"><span class="emoji">🍖</span><span class="bold">Dietary:</span><%= pet.dietary %></p>
+            </div>
           </div>
-        <% else %>
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://www.austinpetsalive.org/assets/placeholder/dog-placeholder.svg')">
-            <%= pet.name %>
-          </div>
-        <% end %>
-
-
         <% end %>
       </div>
     </div>
+
