@@ -1,20 +1,28 @@
-<h1>BookingUpdates</h1>
-<ul>
-<% @booking_updates.each do |update| %>
-  <li><%= update.content %></li>
-  <% if update.media.attached? %>
-    <% if url_for(update.media).match?(/.+(mp4|MOV|webm)/) %>
-      <%= url_for(update.media) %>
-          <li><video controls><source src="<%= cl_video_path update.media.key %>"></video></li>
-    <% else %>
-      <li><%= cl_image_tag update.media.key %></li>
+<div class="chatroom">
+  <h1>Chat Updates</h1>
+  <div id="messages">
+    <% @booking_updates.each do |update| %>
+      <div class="message-container" id="message-<%= update.id %>">
+        <i class="author">
+          <span><%= update.booking.user.name %></span>
+          <small><%= update.created_at.strftime("%a %b %e at %l:%M%p") %></small>
+        </i>
+        <p><%= update.content %></p>
+        <% if update.media.attached? %>
+          <% if url_for(update.media).match?(/.+(mp4|MOV|webm)/) %>
+            <%= url_for(update.media) %>
+              <li><video controls><source src="<%= cl_video_path update.media.key %>"></video></li>
+          <% else %>
+            <li><%= cl_image_tag update.media.key %></li>
+          <% end %>
+        <% end  %>
+      </div>
     <% end %>
-  <% end  %>
-<% end %>
-</ul>
+  </div>
 
-<%= simple_form_for [@booking, @booking_update] do |f| %>
-  <%= f.input :content %>
-  <%= f.input :media, as: :file %>
-  <%= f.submit%>
-<% end %>
+  <%= simple_form_for [@booking, @booking_update] do |f| %>
+    <%= f.input :content %>
+    <%= f.input :media, as: :file %>
+    <%= f.submit %>
+  <% end %>
+</div>
