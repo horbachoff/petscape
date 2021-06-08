@@ -3,7 +3,6 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 
 const initMapbox = () => {
   const mapElement = document.getElementById('map');
-  console.log("cargo")
   const fitMapToMarkers = (map, markers) => {
   const bounds = new mapboxgl.LngLatBounds();
   markers.forEach(marker => bounds.extend([ marker.lng, marker.lat ]));
@@ -18,18 +17,25 @@ const initMapbox = () => {
 
   const markers = JSON.parse(mapElement.dataset.markers);
   markers.forEach((marker) => {
+    const popup = new mapboxgl.Popup({closeButton: false}).setHTML(marker.info_window); // This line was added today
     const element = document.createElement('div');
     element.className = 'marker';
     element.style.backgroundImage = `url('${marker.image_url}')`;
     element.style.backgroundSize = 'contain';
     element.style.width = '50px';
     element.style.height = '50px';
-    new mapboxgl.Marker(element)
+    const mapboxMarker = new mapboxgl.Marker(element)
     .setLngLat([ marker.lng, marker.lat ])
+    .setPopup(popup) // This line was added today
     .addTo(map);
+    const markerElement = mapboxMarker.getElement();
+    markerElement.addEventListener('mouseenter', () => mapboxMarker.togglePopup());
+    markerElement.addEventListener('mouseleave', () => mapboxMarker.togglePopup());
   });
   fitMapToMarkers(map, markers);
   }
 };
+
+
 
 export { initMapbox };

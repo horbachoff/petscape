@@ -1,11 +1,6 @@
 class PetNanniesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index]
 
-  # def no_accents(str)
-  #   str.gsub(/á/, "a").gsub(/é/, "e").gsub(/í/, "i").gsub(/ó/, "o").gsub(/ú/, "u")
-  #   .gsub(/Á/, "A").gsub(/É/, "E").gsub(/Í/, "I").gsub(/Ó/, "O").gsub(/Ú/, "U")
-  # end  
-
   def index
     if params[:query].present? || params[:start_date].present? || params[:end_date].present?
       query_string = "pet_nannies.start_date <= :start_date
@@ -34,6 +29,7 @@ class PetNanniesController < ApplicationController
       {
         lat: pet_nanny.user.latitude,
         lng: pet_nanny.user.longitude,
+        info_window: render_to_string(partial: "info_window", locals: { pet_nanny: pet_nanny }),
         image_url: helpers.asset_url('pet_icon.png')
       }
     end
