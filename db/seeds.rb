@@ -36,7 +36,7 @@ user3 = User.create!(
 
 user4 = User.create!(
   name: "Charly",
-  address: 'Av. Álvaro Obregón 213, Roma Nte., Cuauhtémoc, 06700 Ciudad de México, CDMX',
+  address: 'Av. Alvaro Obregon 213, CDMX',
   password: "123456",
   phone_number: "123654789",
   email: "manman93@animales.com"
@@ -44,7 +44,7 @@ user4 = User.create!(
 
 user5 = User.create!(
   name: "Mariana",
-  address: 'Av. Juárez S/N, Centro Histórico de la Cdad. de México, Centro, Cuauhtémoc, 06050 Ciudad de México, CDMX',
+  address: 'Av. Juárez 100, Centro Histórico, CDMX',
   password: "123456",
   phone_number: "123654789",
   email: "manman94@animales.com"
