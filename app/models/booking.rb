@@ -7,4 +7,6 @@ class Booking < ApplicationRecord
   belongs_to :pet_nanny
   belongs_to :pet
   belongs_to :user
+
+  monetize :amount_cents
 end
