@@ -18,6 +18,25 @@
   text-decoration: none;
 }
 
+.message-button {
+  font-size: 18px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 300;
+  color: white;
+  opacity: 0.93;
+  background-color: #000000;
+  border-width: 0.05rem;
+}
+
+.message-button:hover {
+  background-color: #1f2020;
+  transition-delay: 10ms;
+  text-decoration: none;
+}
+
 .add-pet {
   display: flex;
   justify-content: center;
