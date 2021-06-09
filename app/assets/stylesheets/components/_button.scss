@@ -1,19 +1,20 @@
 .button {
-  font-size: 20px;
+  font-size: 18px;
   display: inline-block;
-  border: 1px solid white;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
-  font-family: Hepta Slab;
   font-weight: 300;
   margin-top: 30px;
   color: white;
-  background-color: $primary;
+  opacity: 0.93;
+  background-color: #000000;
+  border-width: 0.05rem;
 }
 
 .button:hover {
-  color: #faf1e6;
+  background-color: #1f2020;
+  transition-delay: 10ms;
   text-decoration: none;
 }
 
