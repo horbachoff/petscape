@@ -1,0 +1,51 @@
+<!--
+    <div class="col-6">
+            <div class="pet-card text-left">
+              <h4 class="pet-name"> Booking<%= booking.id %></h4>
+              <p class="pet-info-section text-left"><span class="emoji">🏖️</span><span class="bold">Location:</span><%= booking.pet_nanny.user.address %></p>
+              <p class="pet-info-section text-left"><span class="emoji">🐕</span><span class="bold">Nanny:</span><%= booking.pet_nanny.user.name %></p>
+              <p class="pet-info-section text-left"><span class="emoji">📅</span><span class="bold">Dates:</span><%= booking.star_time %> <%= booking.end_time %> </p>
+            </div>
+          </div>
+    <%end%>
+   </div>
+</div> -->
+
+  <!--   <div class="col-9">
+      <div class="card-product">
+        <div class="card-product-infos">
+          <h2>Friday, June 4 </h2>
+          <i class="fas fa-calendar-week"></i>
+          <p>You booking is for <strong>June 23rd - June 29th, 2021</strong>, </p>
+        </div>
+      </div>
+    </div>
+
+
+
+****chat & review function code****
+
+    <div class="card-product">
+        <div class="card-product-infos w-100">
+          <div class="d-flex justify-content-between w-100">
+            <div>
+              <h2> <%= booking.star_time %> </h2>
+              <i class="fas fa-dog"></i>
+              <p>Booking_ID <strong><%= booking.pet_nanny.user.name %></strong>, </p>
+            </div>
+            <div>
+              <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" style="border-radius: 50%;" />
+            </div>
+          </div>
+        <div class="card-product-infos">
+          <h2> <%= booking.star_time %> </h2>
+          <i class="fas fa-dog"></i>
+          <p>Booking_ID <strong><%= booking.pet_nanny.user.name %></strong>, </p>
+          <% if !booking.pet_nanny_review.present? %>
+            <%= link_to "Leave a review meow", new_booking_pet_nanny_review_path(booking) %>
+          <% else %>
+             <p>You already left a review meow</p>
+          <% end %>
+          <%= link_to "Chat with the nanny", booking_booking_updates_path(booking) %>
+        </div>
+      </div>
