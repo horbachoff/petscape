@@ -19,6 +19,14 @@
             <%= booking.star_time %>
             <%= booking.end_time %>
             <%= booking.status %>
+
+            <div>
+              <%= form_tag orders_path do %>
+                <%= hidden_field_tag 'pet_nanny_id', @pet_nanny.id %>
+                <%= submit_tag 'Purchase', class: 'button' %>
+              <% end %>
+            </div>
+
           <% end %>
         </div>
       <% end %>
@@ -31,12 +39,7 @@
         <%= f.submit "Book", class: "button" %>
         <% end %>
 
-        <div>
-          <%= form_tag orders_path do %>
-            <%= hidden_field_tag 'pet_nanny_id', @pet_nanny.id %>
-            <%= submit_tag 'Purchase', class: 'button' %>
-          <% end %>
-        </div>
+        
     </div>
     <div class="flex-even d-flex flex-column justify-content-center align-items-center">
       <div class="text-left">
