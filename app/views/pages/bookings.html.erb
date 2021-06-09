@@ -22,8 +22,8 @@
         <div class="card-trip-infos">
           <div>
             <p>
-              <%= booking.star_time %>
-              <%= booking.end_time %>
+              <%= booking.pet_nanny.user.name %>, from <%= booking.star_time.strftime('%a %d %b %Y') %> to <%= booking.end_time.strftime('%a %d %b %Y') %>
+
             </p>
             <h2 class="my-2">
             Location
@@ -42,7 +42,7 @@
             </div>
         </div>
 
-            <h2 class="card-trip-pricing">$59.99</h2>
+            <h2 class="card-trip-pricing">$<%= booking.amount %></h2>
 
              <% if booking.pet_nanny.user.photo.attached? %>
           <%= cl_image_tag booking.pet_nanny.user.photo.key, crop: :fill, class: "card-trip-user avatar-bordered" %>
@@ -50,7 +50,6 @@
         </div>
         </div>
       </div>
-    </div>
     <%end%>
    </div>
 </div>
