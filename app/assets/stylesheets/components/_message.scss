@@ -10,33 +10,33 @@
 }
 
 #messages {
+  background-color: white;
   padding: 0 1rem;
   padding-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 39px -7px rgba(0,0,0,0.25);
   overflow: scroll;
   max-height: calc(100vh - 66px - 65px - 71px);
-  text-align: center;
-}
-
-#new_booking_update {
-  padding: 1rem;
-  border-top: 1px solid $gray-200;
-
-  .form-group {
-    margin-bottom: 0;
-  }
 }
 
 .chatroom {
-  background: white;
   height: calc(100vh - 66px);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
+  padding: 0 50px;
+
 
   h1 {
     padding: 0.5rem 1rem;
     border-bottom: 1px solid $gray-200;
     margin-bottom: 0;
   }
+}
+
+.message-container {
+  margin-bottom: 15px;
+}
+
+.submission {
+  background-color: white;
+  text-align: center;
+  box-shadow: 5px 5px 39px -7px rgba(0,0,0,0.25);
 }

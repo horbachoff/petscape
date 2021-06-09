@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_03_215319) do
+ActiveRecord::Schema.define(version: 2021_06_09_160224) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -63,6 +63,8 @@ ActiveRecord::Schema.define(version: 2021_06_03_215319) do
     t.string "status", default: "pending"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "amount_cents"
+    t.string "checkout_session_id"
     t.index ["pet_id"], name: "index_bookings_on_pet_id"
     t.index ["pet_nanny_id"], name: "index_bookings_on_pet_nanny_id"
     t.index ["user_id"], name: "index_bookings_on_user_id"
@@ -133,6 +135,7 @@ ActiveRecord::Schema.define(version: 2021_06_03_215319) do
     t.datetime "updated_at", precision: 6, null: false
     t.float "latitude"
     t.float "longitude"
+    t.string "profile_picture"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
