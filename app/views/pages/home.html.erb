@@ -14,7 +14,6 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <% if user_signed_in? %>
-            <%= link_to "Find a Pet Nanny", pet_nannies_path, class: "nav-link" %>
             <li class="nav-item dropdown">
               <% if current_user.photo.attached? %>
               <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="<%= cl_image_path current_user.photo.key %>" />
@@ -23,8 +22,11 @@
               <% end %>
 
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="/pet_owner_dashboard">I have a pet</a>
-                <a class="dropdown-item" href="/pet_nanny_dashboard">I am a pet nanny</a>
+                <%= link_to "My Pets", pets_path, class: "dropdown-item" %>
+                <%= link_to "Add Pet", new_pet_path, class: "dropdown-item" %> <%# Ignacio's pending changes %>
+                <%= link_to "Find a Pet Nanny", pet_nannies_path, class: "dropdown-item" %>
+                <%= link_to "My Bookings", bookings_path, class: "dropdown-item" %>
+                <%= link_to "Become a pet nanny", new_pet_nanny_path, class: "dropdown-item" %>
                 <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
               </div>
             </li>
@@ -78,7 +80,7 @@
           %>
         </div>
         <div class="col-12 text-center">
-          <%= submit_tag "search", class: "button" %>
+          <%= submit_tag "find a pet nanny", class: "button" %>
         </div>
       </div>
     <% end %>
