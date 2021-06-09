@@ -18,15 +18,7 @@
             <%= booking.pet.name %>
             <%= booking.star_time %>
             <%= booking.end_time %>
-            <%= booking.status %>
-
-            <div>
-              <%= form_tag orders_path do %>
-                <%= hidden_field_tag 'pet_nanny_id', @pet_nanny.id %>
-                <%= submit_tag 'Pay Now', class: 'button' %>
-              <% end %>
-            </div>
-
+            <%= booking.status %>          
           <% end %>
         </div>
       <% end %>

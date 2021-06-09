@@ -2,8 +2,36 @@
   <div class="row py-4">
     <div class="col-md-3"></div>
     <div class="col">
-      <h1>Checkout summary</h1>
-      <p>Purchase of <strong><%= @order.pet_nanny.user.name %></strong> for <strong><%= humanized_money_with_symbol @order.amount %></strong></p>
+      <h1>Booking Checkout Summary</h1>
+      <p>
+        Pet Nanny: 
+        <strong>
+          <%= @booking.pet_nanny.user.name %>
+        </strong>
+        , from 
+        <strong>
+          <%= @booking.star_time.strftime('%a %d %b %Y') %>
+        </strong>  
+        to 
+        <strong>
+          <%= @booking.end_time.strftime('%a %d %b %Y') %> 
+        </strong>
+        <br>
+        Rate per day:
+        <strong>
+          <%= humanized_money_with_symbol @booking.amount %>
+        </strong>
+        <br>
+        Number of days: 
+        <strong>
+          <%= (@booking.end_time - @booking.star_time).to_i %>
+        </strong>
+        <br>
+        Total: 
+        <strong>
+          $<%= (@booking.amount_cents / 100) * (@booking.end_time - @booking.star_time).to_i %>
+        </strong>
+      </p>
       <button id="pay" class="btn btn-primary">Pay</button>
       
       <script src="https://js.stripe.com/v3/"></script>
@@ -12,7 +40,7 @@
         paymentButton.addEventListener('click', () => {
           const stripe = Stripe('<%= ENV['STRIPE_PUBLISHABLE_KEY'] %>');
           stripe.redirectToCheckout({
-            sessionId: '<%= @order.checkout_session_id %>'
+            sessionId: '<%= @booking.checkout_session_id %>'
           });
         });
       </script>
