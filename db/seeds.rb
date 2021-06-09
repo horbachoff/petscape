@@ -66,6 +66,10 @@ user7 = User.create!(
   email: "manman96@animales.com"
 )
 
+User.all.each do |user|
+file = File.open("app/assets/images/catman.jpg")
+user.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+end
 pet1 = Pet.create!(
   name: "Spike",
   vet_record: "Recovered from parvovirus",

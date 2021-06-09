@@ -20,3 +20,32 @@
         </div>
       </div>
     </div>
+
+
+
+****chat & review function code****
+
+    <div class="card-product">
+        <div class="card-product-infos w-100">
+          <div class="d-flex justify-content-between w-100">
+            <div>
+              <h2> <%= booking.star_time %> </h2>
+              <i class="fas fa-dog"></i>
+              <p>Booking_ID <strong><%= booking.pet_nanny.user.name %></strong>, </p>
+            </div>
+            <div>
+              <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" style="border-radius: 50%;" />
+            </div>
+          </div>
+        <div class="card-product-infos">
+          <h2> <%= booking.star_time %> </h2>
+          <i class="fas fa-dog"></i>
+          <p>Booking_ID <strong><%= booking.pet_nanny.user.name %></strong>, </p>
+          <% if !booking.pet_nanny_review.present? %>
+            <%= link_to "Leave a review meow", new_booking_pet_nanny_review_path(booking) %>
+          <% else %>
+             <p>You already left a review meow</p>
+          <% end %>
+          <%= link_to "Chat with the nanny", booking_booking_updates_path(booking) %>
+        </div>
+      </div>
