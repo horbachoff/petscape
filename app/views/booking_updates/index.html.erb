@@ -1,28 +1,29 @@
-<div class="chatroom">
-  <h1>Chat Updates</h1>
-  <div id="messages">
-    <% @booking_updates.each do |update| %>
-      <div class="message-container" id="message-<%= update.id %>">
-        <i class="author">
-          <span><%= update.booking.user.name %></span>
-          <small><%= update.created_at.strftime("%a %b %e at %l:%M%p") %></small>
-        </i>
-        <p><%= update.content %></p>
-        <% if update.media.attached? %>
-          <% if url_for(update.media).match?(/.+(mp4|MOV|webm)/) %>
-            <%= url_for(update.media) %>
-              <li><video controls><source src="<%= cl_video_path update.media.key %>"></video></li>
-          <% else %>
-            <li><%= cl_image_tag update.media.key %></li>
-          <% end %>
-        <% end  %>
-      </div>
+<div class="chatroom container">
+  <div class="row">
+    <div id="messages" class="col-6">
+      <% @booking_updates.each do |update| %>
+        <div class="message-container" id="message-<%= update.id %>">
+          <i class="author">
+            <span><%= update.booking.user.name %></span>
+            <small><%= update.created_at.strftime("%a %b %e at %l:%M%p") %></small>
+          </i>
+          <p class="text-left"><%= update.content %></p>
+          <% if update.media.attached? %>
+            <% if url_for(update.media).match?(/.+(mp4|MOV|webm)/) %>
+              <video width="250" height="250" controls><source src="<%= cl_video_path update.media.key %>"></video>
+            <% else %>
+              <%= cl_image_tag update.media.key, width: "250px" %>
+            <% end %>
+          <% end  %>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-6">
+    <%= simple_form_for [@booking, @booking_update] do |f| %>
+      <%= f.input :content, label: "Message #{@booking.pet_nanny.user.name}", input_html: {rows: 10} %>
+      <%= f.input :media, as: :file, label: "Attachments" %>
+      <%= f.submit "Send", class: "message-button" %>
     <% end %>
+    </div>
   </div>
-
-  <%= simple_form_for [@booking, @booking_update] do |f| %>
-    <%= f.input :content %>
-    <%= f.input :media, as: :file %>
-    <%= f.submit %>
-  <% end %>
 </div>
