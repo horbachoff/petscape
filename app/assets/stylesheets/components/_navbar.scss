@@ -25,3 +25,12 @@
   border-radius: 50%;
 }
 
+.test {
+  color: white !important;
+}
+
+.test:hover {
+  color: rgb(208, 204, 204) !important;
+  transition-delay: 10ms;
+}
+
