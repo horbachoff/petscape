@@ -15,6 +15,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <% if user_signed_in? %>
+            <%= link_to "Find a Pet Nanny", pet_nannies_path, class: "nav-link" %>
             <li class="nav-item dropdown">
               <% if current_user.photo.attached? %>
               <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="<%= cl_image_path current_user.photo.key %>" />
