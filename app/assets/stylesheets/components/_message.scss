@@ -13,6 +13,8 @@
   background-color: white;
   padding: 0 1rem;
   padding-top: 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 39px -7px rgba(0,0,0,0.25);
   overflow: scroll;
   max-height: calc(100vh - 66px - 65px - 71px);
 }
@@ -20,6 +22,7 @@
 .chatroom {
   height: calc(100vh - 66px);
   padding: 0 50px;
+
 
   h1 {
     padding: 0.5rem 1rem;
@@ -30,4 +33,10 @@
 
 .message-container {
   margin-bottom: 15px;
+}
+
+.submission {
+  background-color: white;
+  text-align: center;
+  box-shadow: 5px 5px 39px -7px rgba(0,0,0,0.25);
 }
