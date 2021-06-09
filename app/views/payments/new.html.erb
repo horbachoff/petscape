@@ -1,38 +1,27 @@
 <div class="container">
   <div class="row py-4">
-    <div class="col-md-3"></div>
     <div class="col">
       <h1>Booking Checkout Summary</h1>
-      <p>
-        Pet Nanny: 
+      <p class="by-5">         
         <strong>
-          <%= @booking.pet_nanny.user.name %>
+          Pet Nanny: <%= @booking.pet_nanny.user.name %>, from <%= @booking.star_time.strftime('%a %d %b %Y') %> to <%= @booking.end_time.strftime('%a %d %b %Y') %>  
         </strong>
-        , from 
+        <br>        
         <strong>
-          <%= @booking.star_time.strftime('%a %d %b %Y') %>
-        </strong>  
-        to 
-        <strong>
-          <%= @booking.end_time.strftime('%a %d %b %Y') %> 
+          Rate per day: <%= humanized_money_with_symbol @booking.amount %>
         </strong>
-        <br>
-        Rate per day:
+        <br>        
         <strong>
-          <%= humanized_money_with_symbol @booking.amount %>
+        Number of days: <%= (@booking.end_time - @booking.star_time).to_i %>
         </strong>
-        <br>
-        Number of days: 
+        <br>      
         <strong>
-          <%= (@booking.end_time - @booking.star_time).to_i %>
-        </strong>
-        <br>
-        Total: 
-        <strong>
-          $<%= (@booking.amount_cents / 100) * (@booking.end_time - @booking.star_time).to_i %>
+          Total: $<%= (@booking.amount_cents / 100) * (@booking.end_time - @booking.star_time).to_i %>
         </strong>
       </p>
-      <button id="pay" class="btn btn-primary">Pay</button>
+      <div class="text-center my-4">
+        <button id="pay" class="btn btn-primary">Confirm</button>
+      </div>      
       
       <script src="https://js.stripe.com/v3/"></script>
       <script>
