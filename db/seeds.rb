@@ -14,6 +14,7 @@ user1 = User.create!(
   name: "Lisa",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1622062736/sample.jpg",
   phone_number: "123456789",
   email: "dogman92@cat.com"
 )
@@ -22,6 +23,7 @@ user2 = User.create!(
   name: "Jack",
   address: "1572 Locust St, Pasadena, CA",
   password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1622228524/si5h7dv3362zhr3piuonv0ydl07u.jpg",
   phone_number: "47583923",
   email: "catman69@dog.com"
 )
@@ -30,6 +32,7 @@ user3 = User.create!(
   name: "Ignacio",
   address: '16 Villa Gaudelet, Paris',
   password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1622233997/t1ye0ycuaipjh4g9qo1pitb1d5fl.jpg",
   phone_number: "123654789",
   email: "manman92@animales.com"
 )
@@ -38,6 +41,7 @@ user4 = User.create!(
   name: "Charly",
   address: 'Av. Alvaro Obregon 213, CDMX',
   password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1622672567/56kztvv0o5yg8pijr5rp3dzbpof8.png",
   phone_number: "123654789",
   email: "manman93@animales.com"
 )
@@ -46,6 +50,7 @@ user5 = User.create!(
   name: "Mariana",
   address: 'Av. Juárez 100, Centro Histórico, CDMX',
   password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1622736916/k9w1yukkhzy3m1ka437cuhxgk225.jpg",
   phone_number: "123654789",
   email: "manman94@animales.com"
 )
@@ -54,6 +59,7 @@ user6 = User.create!(
   name: "Alex",
   address: 'Plaza de la República S/N, Tabacalera, Cuauhtémoc, 06030 Ciudad de México, CDMX',
   password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1622838693/dfz9msmr7mvjp3a2zesetb74i2sg.jpg",
   phone_number: "123654789",
   email: "manman95@animales.com"
 )
@@ -62,6 +68,7 @@ user7 = User.create!(
   name: "Tania",
   address: 'Londres 247, Del Carmen, Coyoacán, 04100 Ciudad de México, CDMX',
   password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623185210/2000ajihv6fqbwijutbbve5765dq.png",
   phone_number: "123654789",
   email: "manman96@animales.com"
 )

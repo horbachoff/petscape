@@ -2,7 +2,7 @@
  <div class="d-flex card-white">
    <div class="p-5 flex-even text-center">
       <h1>Hello, I'm <%= @pet_nanny.user.name %></h1>
-      <img src="https://m.media-amazon.com/images/M/MV5BY2ViNDIwNmUtZGQ5Ni00MDYxLWI5YTktNWU1NGRlYWQ1ZDg0XkEyXkFqcGdeQXVyOTAyMDgxODQ@._V1_UY1200_CR166,0,630,1200_AL_.jpg" class="profile-circle m-3"  alt="pet_name">
+      <img src="<%= @pet_nanny.user.profile_picture %>" class="profile-circle m-3"  alt="pet_name">
       <p class="mt-3">
         <span class="font-weight-bold">Address:</span> <%= @pet_nanny.user.address %>
       </p>
@@ -19,6 +19,14 @@
             <%= booking.star_time %>
             <%= booking.end_time %>
             <%= booking.status %>
+
+            <div>
+              <%= form_tag orders_path do %>
+                <%= hidden_field_tag 'pet_nanny_id', @pet_nanny.id %>
+                <%= submit_tag 'Pay Now', class: 'button' %>
+              <% end %>
+            </div>
+
           <% end %>
         </div>
       <% end %>
@@ -31,20 +39,13 @@
         <%= f.submit "Book", class: "button" %>
         <% end %>
 
-        <div>
-          <%= form_tag orders_path do %>
-            <%= hidden_field_tag 'pet_nanny_id', @pet_nanny.id %>
-            <%= submit_tag 'Purchase', class: 'button' %>
-          <% end %>
-        </div>
+        
     </div>
     <div class="flex-even d-flex flex-column justify-content-center align-items-center">
       <div class="text-left">
       <h2 class="text-center">Introduction</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, error
-        dolorem quaerat dignissimos sequi quod eaque reprehenderit nam, ducimus
-        facilis culpa, cumque. Quam, error rerum nesciunt eaque tempora accusamus qui?
+        <%= @pet_nanny.introduction %>
       </p>
       </div>
       <div class="reviews mt-5">

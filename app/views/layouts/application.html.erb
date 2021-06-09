@@ -35,14 +35,17 @@
               <% else %>
               <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="<%= cl_image_path("14f2e99cd91947d087adf07bdc718c58_vgtntb.png") %>" />
               <% end %>
-
+              <div class="d-flex">
+              <%= link_to "Find a Pet Nanny", pet_nannies_path, class: "nav-link" %>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="/pet_owner_dashboard">I have a pet</a>
                 <a class="dropdown-item" href="/pet_nanny_dashboard">I am a pet nanny</a>
                 <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
               </div>
+              </div>
             </li>
             <% else %>
+              <%= link_to "Find a Pet Nanny", pet_nannies_path, class: "nav-link" %> <%# Ignacio's pending changes %>
               <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
               <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
           <% end %>

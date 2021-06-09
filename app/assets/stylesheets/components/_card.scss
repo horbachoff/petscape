@@ -55,3 +55,23 @@ width: 50vw;
 .card-product .card-product-infos {
   padding: 16px;
 }
+
+.card-nanny-name {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+.card-nanny-info {
+  font-size: 12px;
+  font-weight: bold;
+  display: none;
+}
+
+.flashcard:hover {
+  .card-nanny-name {
+    display: none;
+  }
+  .card-nanny-info {
+    display: inline;
+  }
+}
