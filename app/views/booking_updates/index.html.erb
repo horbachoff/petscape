@@ -18,12 +18,14 @@
         </div>
       <% end %>
     </div>
-    <div class="col-6">
-    <%= simple_form_for [@booking, @booking_update] do |f| %>
-      <%= f.input :content, label: "Message #{@booking.pet_nanny.user.name}", input_html: {rows: 10} %>
-      <%= f.input :media, as: :file, label: "Attachments" %>
-      <%= f.submit "Send", class: "message-button" %>
-    <% end %>
+      <div class="col-6">
+      <%= simple_form_for [@booking, @booking_update] do |f| %>
+        <div class="submission">
+        <%= f.input :content, label: "Message #{@booking.pet_nanny.user.name}:", input_html: {rows: 10} %>
+        </div>
+        <%= f.input :media, as: :file, label: "Attachments" %>
+        <%= f.submit "Send", class: "message-button" %>
+      <% end %>
     </div>
   </div>
 </div>
