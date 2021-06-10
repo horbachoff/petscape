@@ -75,7 +75,7 @@ user7 = User.create!(
 
 user8 = User.create!(
   name: "Katya",
-  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  address: "50 N Temple, Salt Lake City, UT 84150",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267239/jon-grogan-yfTFo4iaADI-unsplash_axgfu5.jpg",
   phone_number: "123456789",
@@ -84,7 +84,7 @@ user8 = User.create!(
 
 user9 = User.create!(
   name: "Antonella",
-  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  address: "400 Broad St, Seattle, WA 98109",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267235/mel-elias-2_KjpNXFl5M-unsplash_wbankq.jpg",
   phone_number: "123456789",
@@ -93,7 +93,7 @@ user9 = User.create!(
 
 user10 = User.create!(
   name: "Vivian",
-  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  address: "901 Bagby St, Houston, TX 77002",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267235/evgeniya-litovchenko-KV_7Q5UNcCQ-unsplash_cuhifs.jpg",
   phone_number: "123456789",
@@ -102,7 +102,7 @@ user10 = User.create!(
 
 user11 = User.create!(
   name: "Bob",
-  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  address: "1103 Biscayne Blvd, Miami, FL 33132",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267234/alevision-co-c3MJ3-PrUuo-unsplash_yulvix.jpg",
   phone_number: "123456789",
@@ -120,7 +120,7 @@ user12 = User.create!(
 
 user13 = User.create!(
   name: "Cloe",
-  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  address: "4012 S Kedzie Ave, Chicago, IL 60632",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267234/brad-lloyd-xy1Yo_MHDvQ-unsplash_q4j0qk.jpg",
   phone_number: "123456789",
@@ -129,7 +129,7 @@ user13 = User.create!(
 
 user14 = User.create!(
   name: "Diane",
-  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  address: "77 Wynford Dr, North York, ON M3C 1K1",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267234/roberto-nickson-_JGVVEfbTVQ-unsplash_yrafkk.jpg",
   phone_number: "123456789",
@@ -147,7 +147,7 @@ user15 = User.create!(
 
 user16 = User.create!(
   name: "Dafne",
-  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  address: "Av. Paulista, 1578 - Bela Vista, São Paulo - SP, 01310-200",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267230/shwa-hall-JX66YVQl6II-unsplash_fcdh1n.jpg",
   phone_number: "123456789",
@@ -174,7 +174,7 @@ user18 = User.create!(
 
 user19 = User.create!(
   name: "Cassidy",
-  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  address: "Santa Catalina 301, Arequipa 04001",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341908/cassiano-psomas-EVjghVvLJTc-unsplash_ze5uv8.jpg",
   phone_number: "123456789",
@@ -192,7 +192,7 @@ user20 = User.create!(
 
 user21 = User.create!(
   name: "Jennifer",
-  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  address: "Balcarce 50, C1064 CABA",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341905/jonathan-cooper-eqcjVloi7fI-unsplash_r1h8bx.jpg",
   phone_number: "123456789",
@@ -201,7 +201,7 @@ user21 = User.create!(
 
 user22 = User.create!(
   name: "Melissa",
-  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  address: "6 Slate Wharf, Manchester M15 4ST",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341905/melissa-keizer-9YHNCiblBI4-unsplash_f2anw5.jpg",
   phone_number: "123456789",
@@ -210,7 +210,7 @@ user22 = User.create!(
 
 user23 = User.create!(
   name: "Elizabeth",
-  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  address: "Huk Aveny 35, 0287 Oslo",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341905/tamara-bellis-WrUGxeL-Hgs-unsplash_tqc4hu.jpg",
   phone_number: "123456789",
@@ -219,7 +219,7 @@ user23 = User.create!(
 
 user24 = User.create!(
   name: "Laura",
-  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  address: "Volodymyrska St, 24, Kyiv, 01001",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341905/laurentiu-cotet-06Smd3x8ORc-unsplash_padb0v.jpg",
   phone_number: "123456789",
@@ -228,7 +228,7 @@ user24 = User.create!(
 
 user25 = User.create!(
   name: "Stephanie",
-  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  address: "205 Shangnan Rd, Pudong, Shanghai, China, 200010",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341904/spencer-gu-5t5q8LfOtbg-unsplash_zjxk4c.jpg",
   phone_number: "123456789",
@@ -246,7 +246,7 @@ user26 = User.create!(
 
 user27 = User.create!(
   name: "Geraldine",
-  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  address: "3 Chome-5-12 Shibuya, Shibuya City, Tokyo 150-0002",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341903/japheth-mast-Ga6z9QD8yvw-unsplash_vw5kif.jpg",
   phone_number: "123456789",
@@ -264,7 +264,7 @@ user28 = User.create!(
 
 user29 = User.create!(
   name: "Stacey",
-  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  address: "205 Harris St, Pyrmont NSW 2009",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341902/misael-silvera-IEJbfuqlIP8-unsplash_yckrce.jpg",
   phone_number: "123456789",
@@ -273,7 +273,7 @@ user29 = User.create!(
 
 user30 = User.create!(
   name: "Marian",
-  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  address: "146 Louis Botha Ave, Houghton Estate, Johannesburg, 1500",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341901/marian-oleksyn-6t8fq3OBeBI-unsplash_iaugeu.jpg",
   phone_number: "123456789",
