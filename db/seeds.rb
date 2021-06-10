@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Pet.destroy_all
+# Pet.destroy_all
 PetNanny.destroy_all
 User.destroy_all
 
@@ -73,32 +73,211 @@ user7 = User.create!(
   email: "manman96@animales.com"
 )
 
-User.all.each do |user|
-file = File.open("app/assets/images/catman.jpg")
-user.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-end
-pet1 = Pet.create!(
-  name: "Spike",
-  vet_record: "Recovered from parvovirus",
-  medications: "none",
-  dietary: "poultry",
-  user: user1
+user8 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman93@cat.com"
 )
 
-pet2 = Pet.create!(
-  name: "Carlota",
-  vet_record: "No allergies",
-  medications: "none",
-  dietary: "poultry",
-  user: user2
+user9 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman94@cat.com"
 )
 
-pet3 = Pet.create!(
-  name: "Whiskey",
-  vet_record: "none",
-  medications: "none",
-  dietary: "poultry",
-  user: user3
+user10 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman95@cat.com"
+)
+
+user11 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman96@cat.com"
+)
+
+user12 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman97@cat.com"
+)
+
+user13 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman98@cat.com"
+)
+
+user14 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman99@cat.com"
+)
+
+user15 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman92@cat.com"
+)
+
+user16 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman92@cat.com"
+)
+
+user17 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman92@cat.com"
+)
+
+user18 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman92@cat.com"
+)
+
+user19 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman92@cat.com"
+)
+
+user20 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman92@cat.com"
+)
+
+user21 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman92@cat.com"
+)
+
+user22 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman92@cat.com"
+)
+
+user23 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman92@cat.com"
+)
+
+user24 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman92@cat.com"
+)
+
+user25 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman92@cat.com"
+)
+
+user26 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman92@cat.com"
+)
+
+user27 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman92@cat.com"
+)
+
+user28 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman92@cat.com"
+)
+
+user29 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman92@cat.com"
+)
+
+user30 = User.create!(
+  name: "Lisa",
+  address: "723 E Kensington Rd, Los Angeles, CA, 90026",
+  password: "123456",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  phone_number: "123456789",
+  email: "dogman92@cat.com"
 )
 
 nanny1 = PetNanny.create!(
@@ -156,3 +335,215 @@ nanny7 = PetNanny.create!(
   rate_cents: 2700,
   user: user7
 )
+
+nanny8 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny9 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny10 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny11 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny12 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny13 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny14 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny15 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny16 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny17 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny18 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny19 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny20 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny21 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny22 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny23 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny24 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny25 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny26 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny27 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny28 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny29 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+nanny30 = PetNanny.create!(
+  introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
+  start_date: '2021-07-01',
+  end_date: '2021-07-31',
+  rate_cents: 3000,
+  user: user3
+)
+
+# User.all.each do |user|
+# file = File.open("app/assets/images/catman.jpg")
+# user.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+# end
+# pet1 = Pet.create!(
+#   name: "Spike",
+#   vet_record: "Recovered from parvovirus",
+#   medications: "none",
+#   dietary: "poultry",
+#   user: user1
+# )
+
+# pet2 = Pet.create!(
+#   name: "Carlota",
+#   vet_record: "No allergies",
+#   medications: "none",
+#   dietary: "poultry",
+#   user: user2
+# )
+
+# pet3 = Pet.create!(
+#   name: "Whiskey",
+#   vet_record: "none",
+#   medications: "none",
+#   dietary: "poultry",
+#   user: user3
+# )
