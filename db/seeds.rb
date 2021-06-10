@@ -142,7 +142,7 @@ user15 = User.create!(
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
   phone_number: "123456789",
-  email: "dogman92@cat.com"
+  email: "dogman01@cat.com"
 )
 
 user16 = User.create!(
@@ -151,7 +151,7 @@ user16 = User.create!(
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
   phone_number: "123456789",
-  email: "dogman92@cat.com"
+  email: "dogman02@cat.com"
 )
 
 user17 = User.create!(
@@ -160,7 +160,7 @@ user17 = User.create!(
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
   phone_number: "123456789",
-  email: "dogman92@cat.com"
+  email: "dogman03@cat.com"
 )
 
 user18 = User.create!(
@@ -169,7 +169,7 @@ user18 = User.create!(
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
   phone_number: "123456789",
-  email: "dogman92@cat.com"
+  email: "dogman04@cat.com"
 )
 
 user19 = User.create!(
@@ -178,7 +178,7 @@ user19 = User.create!(
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
   phone_number: "123456789",
-  email: "dogman92@cat.com"
+  email: "dogman05@cat.com"
 )
 
 user20 = User.create!(
@@ -187,7 +187,7 @@ user20 = User.create!(
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
   phone_number: "123456789",
-  email: "dogman92@cat.com"
+  email: "dogman06@cat.com"
 )
 
 user21 = User.create!(
@@ -196,7 +196,7 @@ user21 = User.create!(
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
   phone_number: "123456789",
-  email: "dogman92@cat.com"
+  email: "dogman07@cat.com"
 )
 
 user22 = User.create!(
@@ -205,7 +205,7 @@ user22 = User.create!(
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
   phone_number: "123456789",
-  email: "dogman92@cat.com"
+  email: "dogman08@cat.com"
 )
 
 user23 = User.create!(
@@ -214,7 +214,7 @@ user23 = User.create!(
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
   phone_number: "123456789",
-  email: "dogman92@cat.com"
+  email: "dogman09@cat.com"
 )
 
 user24 = User.create!(
@@ -223,7 +223,7 @@ user24 = User.create!(
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
   phone_number: "123456789",
-  email: "dogman92@cat.com"
+  email: "dogman10@cat.com"
 )
 
 user25 = User.create!(
@@ -232,7 +232,7 @@ user25 = User.create!(
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
   phone_number: "123456789",
-  email: "dogman92@cat.com"
+  email: "dogman11@cat.com"
 )
 
 user26 = User.create!(
@@ -241,7 +241,7 @@ user26 = User.create!(
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
   phone_number: "123456789",
-  email: "dogman92@cat.com"
+  email: "dogman12@cat.com"
 )
 
 user27 = User.create!(
@@ -250,7 +250,7 @@ user27 = User.create!(
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
   phone_number: "123456789",
-  email: "dogman92@cat.com"
+  email: "dogman13@cat.com"
 )
 
 user28 = User.create!(
@@ -259,7 +259,7 @@ user28 = User.create!(
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
   phone_number: "123456789",
-  email: "dogman92@cat.com"
+  email: "dogman14@cat.com"
 )
 
 user29 = User.create!(
@@ -268,7 +268,7 @@ user29 = User.create!(
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
   phone_number: "123456789",
-  email: "dogman92@cat.com"
+  email: "dogman15@cat.com"
 )
 
 user30 = User.create!(
@@ -277,7 +277,7 @@ user30 = User.create!(
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
   phone_number: "123456789",
-  email: "dogman92@cat.com"
+  email: "dogman16@cat.com"
 )
 
 nanny1 = PetNanny.create!(
@@ -338,186 +338,186 @@ nanny7 = PetNanny.create!(
 
 nanny8 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user8
 )
 
 nanny9 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user9
 )
 
 nanny10 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user10
 )
 
 nanny11 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user11
 )
 
 nanny12 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user12
 )
 
 nanny13 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user13
 )
 
 nanny14 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user14
 )
 
 nanny15 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user15
 )
 
 nanny16 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user16
 )
 
 nanny17 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user17
 )
 
 nanny18 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user18
 )
 
 nanny19 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user19
 )
 
 nanny20 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user20
 )
 
 nanny21 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user21
 )
 
 nanny22 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user22
 )
 
 nanny23 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user23
 )
 
 nanny24 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user24
 )
 
 nanny25 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user25
 )
 
 nanny26 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user26
 )
 
 nanny27 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user27
 )
 
 nanny28 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user28
 )
 
 nanny29 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user29
 )
 
 nanny30 = PetNanny.create!(
   introduction: "Animals must not be considered pets. They are living beings and they are our equals. Each interaction with any animal is a beautiful and unique experience.",
-  start_date: '2021-07-01',
+  start_date: '2021-06-01',
   end_date: '2021-07-31',
   rate_cents: 3000,
-  user: user3
+  user: user30
 )
 
 # User.all.each do |user|
