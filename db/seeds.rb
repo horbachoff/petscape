@@ -111,7 +111,7 @@ user11 = User.create!(
 
 user12 = User.create!(
   name: "Jessica",
-  address: "20 W 34th St, New York, NY 10001",
+  address: "20 W 34th St, New York, New York 10001",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341903/yerlin-matu-EZ8aoSlsoj8-unsplash_r80plr.jpg",
   phone_number: "123456789",
@@ -138,7 +138,7 @@ user14 = User.create!(
 
 user15 = User.create!(
   name: "Paulette",
-  address: "602 Surf Ave, Brooklyn, NY 11224",
+  address: "602 Surf Ave, Brooklyn, New York 11224",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267232/ali-karimi-fdf9VTnGk2w-unsplash_kdh1lb.jpg",
   phone_number: "123456789",
@@ -156,7 +156,7 @@ user16 = User.create!(
 
 user17 = User.create!(
   name: "Rachel",
-  address: "137-57 Farmers Blvd, Queens, NY 11413",
+  address: "137-57 Farmers Blvd, Queens, New York 11413",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341908/nicholas-ng-Efcg4FrVYHo-unsplash_jzn9p3.jpg",
   phone_number: "123456789",
@@ -165,7 +165,7 @@ user17 = User.create!(
 
 user18 = User.create!(
   name: "Chuck",
-  address: "2300 Southern Blvd, Bronx, NY 10460",
+  address: "2300 Southern Blvd, Bronx, New York 10460",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341900/caro-costa-E9OP3pkFCe0-unsplash_aqyfrz.jpg",
   phone_number: "123456789",
@@ -183,7 +183,7 @@ user19 = User.create!(
 
 user20 = User.create!(
   name: "Tamara",
-  address: "109 E 167th St, Bronx, NY 10452",
+  address: "109 E 167th St, Bronx, New York 10452",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341907/tamara-bellis-8FYvkl0zHQE-unsplash_u30mqi.jpg",
   phone_number: "123456789",
@@ -237,7 +237,7 @@ user25 = User.create!(
 
 user26 = User.create!(
   name: "Elvis",
-  address: "614 Broadway, Staten Island, NY 10310",
+  address: "614 Broadway, Staten Island, New York 10310",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341903/elvis-ray-BkGnjF-VhVU-unsplash_vzjhuc.jpg",
   phone_number: "123456789",
@@ -255,7 +255,7 @@ user27 = User.create!(
 
 user28 = User.create!(
   name: "Anthony",
-  address: "36-01 35th Ave, Queens, NY 11106",
+  address: "36-01 35th Ave, Queens, New York 11106",
   password: "123456",
   profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341902/anton-darius-dpOcAyL6MVs-unsplash_asgzyh.jpg",
   phone_number: "123456789",
