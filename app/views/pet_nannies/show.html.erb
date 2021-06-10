@@ -1,3 +1,4 @@
+<% @title="Pet Nanny Profile" %>
 <div class="container p-5">
  <div class="d-flex card-white">
    <div class="p-5 flex-even text-center">
@@ -18,7 +19,7 @@
             <%= booking.pet.name %>
             <%= booking.star_time %>
             <%= booking.end_time %>
-            <%= booking.status %>          
+            <%= booking.status %>
           <% end %>
         </div>
       <% end %>
@@ -30,7 +31,7 @@
         <%= f.input :pet_nanny_id, input_html: {value: @pet_nanny.id}, as: :hidden  %>
         <%= f.submit "Book", class: "button" %>
         <% end %>
-        
+
     </div>
     <div class="flex-even d-flex flex-column justify-content-center align-items-center">
       <div class="text-left">
