@@ -18,7 +18,7 @@ class BookingsController < ApplicationController
           currency: 'usd',
           quantity: (@booking.end_time - @booking.star_time).to_i
         }],
-        success_url: pet_nanny_url(@pet_nanny),
+        success_url: bookings_url,
         cancel_url: pet_nanny_url(@pet_nanny)
       )
     
