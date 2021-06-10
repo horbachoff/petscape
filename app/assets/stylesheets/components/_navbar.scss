@@ -1,6 +1,7 @@
 .navbar-petscape {
   justify-content: space-between;
   background: $secondary;
+  margin-bottom: 10px;
 }
 
 .navbar-petscape .navbar-collapse {
@@ -33,4 +34,3 @@
   color: rgb(208, 204, 204) !important;
   transition-delay: 10ms;
 }
-

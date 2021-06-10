@@ -1,10 +1,13 @@
-<div class = "p-5 form mt-5 form-container">
-  <%= simple_form_for( @pet ) do |f| %>
-    <%= f.input :name, input_html: { class: "" } %>
-    <%= f.input :vet_record, input_html: { class: "" } %>
-    <%= f.input :medications, input_html: { class: "" } %>
-    <%= f.input :dietary, input_html: { class: "" } %>
-    <%= f.input :photo, as: :file %>
-    <%= f.button :submit, class: "button" %>
-  <% end %>
+<div class = "container" id= "add-pet">
+  <div class = "p-5 form mt-5 form-container">
+   <h1>Create a pet:</h1>
+    <%= simple_form_for( @pet ) do |f| %>
+      <%= f.input :name, input_html: { class: "" } %>
+      <%= f.input :vet_record, input_html: { class: "" } %>
+      <%= f.input :medications, input_html: { class: "" } %>
+      <%= f.input :dietary, input_html: { class: "" } %>
+      <%= f.input :photo, as: :file %>
+      <%= f.button :submit, class: "button" %>
+    <% end %>
+  </div>
 </div>
