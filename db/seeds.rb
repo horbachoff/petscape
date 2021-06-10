@@ -74,208 +74,208 @@ user7 = User.create!(
 )
 
 user8 = User.create!(
-  name: "Lisa",
+  name: "Katya",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267239/jon-grogan-yfTFo4iaADI-unsplash_axgfu5.jpg",
   phone_number: "123456789",
   email: "dogman93@cat.com"
 )
 
 user9 = User.create!(
-  name: "Lisa",
+  name: "Antonella",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267235/mel-elias-2_KjpNXFl5M-unsplash_wbankq.jpg",
   phone_number: "123456789",
   email: "dogman94@cat.com"
 )
 
 user10 = User.create!(
-  name: "Lisa",
+  name: "Vivian",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267235/evgeniya-litovchenko-KV_7Q5UNcCQ-unsplash_cuhifs.jpg",
   phone_number: "123456789",
   email: "dogman95@cat.com"
 )
 
 user11 = User.create!(
-  name: "Lisa",
+  name: "Bob",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267234/alevision-co-c3MJ3-PrUuo-unsplash_yulvix.jpg",
   phone_number: "123456789",
   email: "dogman96@cat.com"
 )
 
 user12 = User.create!(
-  name: "Lisa",
+  name: "Jessica",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341903/yerlin-matu-EZ8aoSlsoj8-unsplash_r80plr.jpg",
   phone_number: "123456789",
   email: "dogman97@cat.com"
 )
 
 user13 = User.create!(
-  name: "Lisa",
+  name: "Cloe",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267234/brad-lloyd-xy1Yo_MHDvQ-unsplash_q4j0qk.jpg",
   phone_number: "123456789",
   email: "dogman98@cat.com"
 )
 
 user14 = User.create!(
-  name: "Lisa",
+  name: "Diane",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267234/roberto-nickson-_JGVVEfbTVQ-unsplash_yrafkk.jpg",
   phone_number: "123456789",
   email: "dogman99@cat.com"
 )
 
 user15 = User.create!(
-  name: "Lisa",
+  name: "Paulette",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267232/ali-karimi-fdf9VTnGk2w-unsplash_kdh1lb.jpg",
   phone_number: "123456789",
   email: "dogman01@cat.com"
 )
 
 user16 = User.create!(
-  name: "Lisa",
+  name: "Dafne",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267230/shwa-hall-JX66YVQl6II-unsplash_fcdh1n.jpg",
   phone_number: "123456789",
   email: "dogman02@cat.com"
 )
 
 user17 = User.create!(
-  name: "Lisa",
+  name: "Rachel",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341908/nicholas-ng-Efcg4FrVYHo-unsplash_jzn9p3.jpg",
   phone_number: "123456789",
   email: "dogman03@cat.com"
 )
 
 user18 = User.create!(
-  name: "Lisa",
+  name: "Chuck",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341900/caro-costa-E9OP3pkFCe0-unsplash_aqyfrz.jpg",
   phone_number: "123456789",
   email: "dogman04@cat.com"
 )
 
 user19 = User.create!(
-  name: "Lisa",
+  name: "Cassidy",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341908/cassiano-psomas-EVjghVvLJTc-unsplash_ze5uv8.jpg",
   phone_number: "123456789",
   email: "dogman05@cat.com"
 )
 
 user20 = User.create!(
-  name: "Lisa",
+  name: "Tamara",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341907/tamara-bellis-8FYvkl0zHQE-unsplash_u30mqi.jpg",
   phone_number: "123456789",
   email: "dogman06@cat.com"
 )
 
 user21 = User.create!(
-  name: "Lisa",
+  name: "Jennifer",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341905/jonathan-cooper-eqcjVloi7fI-unsplash_r1h8bx.jpg",
   phone_number: "123456789",
   email: "dogman07@cat.com"
 )
 
 user22 = User.create!(
-  name: "Lisa",
+  name: "Melissa",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341905/melissa-keizer-9YHNCiblBI4-unsplash_f2anw5.jpg",
   phone_number: "123456789",
   email: "dogman08@cat.com"
 )
 
 user23 = User.create!(
-  name: "Lisa",
+  name: "Elizabeth",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341905/tamara-bellis-WrUGxeL-Hgs-unsplash_tqc4hu.jpg",
   phone_number: "123456789",
   email: "dogman09@cat.com"
 )
 
 user24 = User.create!(
-  name: "Lisa",
+  name: "Laura",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341905/laurentiu-cotet-06Smd3x8ORc-unsplash_padb0v.jpg",
   phone_number: "123456789",
   email: "dogman10@cat.com"
 )
 
 user25 = User.create!(
-  name: "Lisa",
+  name: "Stephanie",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341904/spencer-gu-5t5q8LfOtbg-unsplash_zjxk4c.jpg",
   phone_number: "123456789",
   email: "dogman11@cat.com"
 )
 
 user26 = User.create!(
-  name: "Lisa",
+  name: "Elvis",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341903/elvis-ray-BkGnjF-VhVU-unsplash_vzjhuc.jpg",
   phone_number: "123456789",
   email: "dogman12@cat.com"
 )
 
 user27 = User.create!(
-  name: "Lisa",
+  name: "Geraldine",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341903/japheth-mast-Ga6z9QD8yvw-unsplash_vw5kif.jpg",
   phone_number: "123456789",
   email: "dogman13@cat.com"
 )
 
 user28 = User.create!(
-  name: "Lisa",
+  name: "Anthony",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341902/anton-darius-dpOcAyL6MVs-unsplash_asgzyh.jpg",
   phone_number: "123456789",
   email: "dogman14@cat.com"
 )
 
 user29 = User.create!(
-  name: "Lisa",
+  name: "Stacey",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341902/misael-silvera-IEJbfuqlIP8-unsplash_yckrce.jpg",
   phone_number: "123456789",
   email: "dogman15@cat.com"
 )
 
 user30 = User.create!(
-  name: "Lisa",
+  name: "Marian",
   address: "723 E Kensington Rd, Los Angeles, CA, 90026",
   password: "123456",
-  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623267233/tamara-bellis-n00UuCMzVgM-unsplash_p8y4iw.jpg",
+  profile_picture: "https://res.cloudinary.com/druc0epi3/image/upload/v1623341901/marian-oleksyn-6t8fq3OBeBI-unsplash_iaugeu.jpg",
   phone_number: "123456789",
   email: "dogman16@cat.com"
 )
