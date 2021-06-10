@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Petscape</title>
+  <title><%= @title %></title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
-
+  <meta charset="UTF-8">
+  <meta name="description" content="Go away for holiday, find a petsitter to watch your pets">
+  <meta name="keywords" content="pets, petsitter, holiday, travel, vacation,">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-
   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   <%= stylesheet_pack_tag 'application' %>
 </head>
@@ -15,7 +16,7 @@
 <body>
   <% unless should_hide? %>
     <div class="navbar navbar-expand-sm navbar-light navbar-petscape">
-     
+
       <div class="logo d-flex flex-column justify-content-center">
         <%= link_to cl_image_tag("14f2e99cd91947d087adf07bdc718c58_1_ozq2xn.png"), root_path %>
       </div>
