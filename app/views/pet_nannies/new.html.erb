@@ -1,11 +1,12 @@
-<% @title="Become a Pet Nanny" %>
-<h1>Become a pet nanny</h1>
 
-<div class="p-5 form mt-5 form-container">
-  <%= simple_form_for(@pet_nanny) do |f| %>
-    <%= f.input :introduction, input_html: { class: "" } %>
-    <%= f.input :start_date, as: :date, html5: true, required: "required", :label => "I am willing to pet sit from"%>
-    <%= f.input :end_date, as: :date, html5: true, :label => "to"%>
-    <%= f.button :submit, class: "button" %>
-  <% end %>
+<div class = "container" id= "become-pet-nanny">
+  <div class="p-5 form mt-5 form-container">
+    <%= simple_form_for(@pet_nanny) do |f| %>
+      <h1>Become a pet nanny:</h1>
+      <%= f.input :introduction, input_html: { class: "" } %>
+      <%= f.input :start_date, as: :date, html5: true, required: "required", :label => "I am willing to pet sit from"%>
+      <%= f.input :end_date, as: :date, html5: true, :label => "to"%>
+      <%= f.button :submit, class: "button" %>
+    <% end %>
+  </div>
 </div>

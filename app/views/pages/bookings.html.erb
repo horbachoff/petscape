@@ -1,13 +1,10 @@
 <% @title="Bookings" %>
 
 <div class="container">
-  <div>
+  <div class="header-style1">
     <h2 class="my-5">
-      <strong> Welcome <%= current_user.name.capitalize%> ! </strong>
+      <strong><%= current_user.name.capitalize%>'s current bookings: </strong>
     </h2>
-    <h3 class="mt-5 mb-3">
-      <strong> Bookings </strong>
-    </h3>
   </div>
   <div class="row">
     <% @bookings.each do |booking| %>
