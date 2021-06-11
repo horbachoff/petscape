@@ -5,7 +5,7 @@
       <% @booking_updates.each do |update| %>
         <div class="message-container" id="message-<%= update.id %>">
           <i class="author">
-            <span><%= update.booking.user.name %></span>
+            <span><%= update.user.name %></span>
             <small><%= update.created_at.strftime("%a %b %e at %l:%M%p") %></small>
           </i>
           <p class="text-left"><%= update.content %></p>
