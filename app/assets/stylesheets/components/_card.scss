@@ -75,6 +75,18 @@ width: 50vw;
   }
 }
 
+.pet-card-avatar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pet-card-default {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #pet-nanny-card {
   background-color: rgb(255, 255, 255);
   box-shadow: 5px 5px 39px -7px rgba(0, 0, 0, 0.692);
