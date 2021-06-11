@@ -11,7 +11,9 @@
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   <%= stylesheet_pack_tag 'application' %>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
+
 
 <body>
   <% unless should_hide? %>
@@ -43,12 +45,12 @@
 
                 <%= link_to "Add Pet", new_pet_path, class: "dropdown-item #{ current_page?(new_pet_path) ? 'font-weight-bold' : '' }" %> <%# Ignacio's pending changes %>
                 <%= link_to pets_path, class: "dropdown-item d-flex justify-content-between #{ current_page?(pets_path) ? 'font-weight-bold' : '' }" do %>
-                  <span> my pets </span>
+                  <span> My Pets </span>
                   <span> <%= current_user.pets.count %> </span>
                   <% end %>
                   <hr class="dropdown-divider">
                 <%= link_to "Find a Pet Nanny", pet_nannies_path, class: "dropdown-item #{ current_page?(pet_nannies_path) ? 'font-weight-bold' : '' }" %>
-                <%= link_to "Become a pet nanny", new_pet_nanny_path, class: "dropdown-item #{ current_page?(new_pet_nanny_path) ? 'font-weight-bold' : '' }" %>
+                <%= link_to "Become a Pet nanny", new_pet_nanny_path, class: "dropdown-item #{ current_page?(new_pet_nanny_path) ? 'font-weight-bold' : '' }" %>
                  <hr class="dropdown-divider">
                  <%= link_to bookings_path, class: "dropdown-item d-flex justify-content-between #{ current_page?(bookings_path) ? 'font-weight-bold' : '' }" do %>
                   <span> My Bookings </span>
