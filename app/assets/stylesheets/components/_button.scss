@@ -51,3 +51,36 @@
   margin-top: 8px;
 }
 
+
+.button-wrapper {
+  position: relative;
+  width: 150px;
+  text-align: center;
+
+}
+
+.button-wrapper label.label {
+  font-size: 17px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 300;
+  color: white;
+  opacity: 0.93;
+  background-color: #000000;
+  border-width: 0.05rem;
+  z-index: 2;
+}
+
+.button-wrapper label.label:hover {
+  background-color: #1f2020;
+  transition-delay: 10ms;
+  text-decoration: none;
+  color:grey;
+}
+
+#upload {
+    display: none;
+}
+

@@ -50,61 +50,10 @@
       </div>
 </div>
 <div class="container">
-    <%= form_tag pet_nannies_path, method: :get, id: "search-form" do %>
-  <h1 style="margin-top: 150px;">
-    Travel. Pet free.
+ <h1 style="margin-top: 150px; opacity: 0.7;">
+    Travel. Pet Free.
   </h1>
-      <div class="row p-5" style="">
-        <div class="col-4" style="padding-right:0">
-
-          <p class="font-weight-bold">
-            Location
-          </p>
-            <%= text_field_tag :query,
-            params[:query],
-            class: "form-control rounded-right",
-            style: "border-radius:20px 0px 0px 20px;",
-            placeholder: "address, city, zip",
-            required: "required"
-            %>
-        </div>
-
-
-        <div class="col-4" style="padding-left:0; padding-right:0">
-          <p class="font-weight-bold">
-            Check in
-          </p>
-          <%= date_field_tag :start_date,
-          params[:start_date],
-          class: "form-control",
-          placeholder: "start date",
-          required: "required"
-          %>
-        </div>
-
-        <div class="col-4" style="padding-left:0" >
-          <p class="font-weight-bold">
-            Check out
-          </p>
-          <div class="position-relative">
-
-          <%= date_field_tag :end_date,
-          params[:end_date],
-          class: "form-control rounded-left",
-            style: "border-radius:0 20px 20px 0;",
-          placeholder: "end date",
-          required: "required"
-          %>
-          <button type="submit" class="button position-absolute"style="top:-30px; right: 5px; height: 36px; width: 36px; display:flex; align-items: center; justify-content: center">
-            <i class="fas fa-search"></i>
-          </button>
-          </div>
-        </div>
-        <!-- <div class="col-12 text-center">
- -->
-        <!-- </div> -->
-      </div>
-    <% end %>
+    <%= render 'pet_nannies/search' %>
   </div>
 </div>
 

@@ -6,7 +6,10 @@
       <%= f.input :vet_record, input_html: { class: "" } %>
       <%= f.input :medications, input_html: { class: "" } %>
       <%= f.input :dietary, input_html: { class: "" } %>
-      <%= f.input :photo, as: :file %>
+      <div class="button-wrapper">
+      <label class="label" for="upload">Upload File</label>
+      <%= f.input_field :photo, as: :file, class: "input-style", id: "upload" %>
+      </div>
       <%= f.button :submit, class: "button" %>
     <% end %>
   </div>

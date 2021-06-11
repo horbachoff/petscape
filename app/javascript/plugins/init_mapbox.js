@@ -17,7 +17,7 @@ const initMapbox = () => {
 
   const markers = JSON.parse(mapElement.dataset.markers);
   markers.forEach((marker) => {
-    const popup = new mapboxgl.Popup({closeButton: false}).setHTML(marker.info_window); // This line was added today
+    const popup = new mapboxgl.Popup().setHTML(marker.info_window); // This line was added today
     const element = document.createElement('div');
     element.className = 'marker';
     element.style.backgroundImage = `url('${marker.image_url}')`;
@@ -28,9 +28,9 @@ const initMapbox = () => {
     .setLngLat([ marker.lng, marker.lat ])
     .setPopup(popup) // This line was added today
     .addTo(map);
-    const markerElement = mapboxMarker.getElement();
-    markerElement.addEventListener('mouseenter', () => mapboxMarker.togglePopup());
-    markerElement.addEventListener('mouseleave', () => mapboxMarker.togglePopup());
+    // const markerElement = mapboxMarker.getElement();
+    // markerElement.addEventListener('click', () => mapboxMarker.togglePopup());
+    // markerElement.addEventListener('mouseleave', () => mapboxMarker.togglePopup());
   });
   fitMapToMarkers(map, markers);
   }
