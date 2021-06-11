@@ -1,6 +1,6 @@
 
 <div class="container">
-  <h1 class="header-style">Pets that'll pay your utility bills!</h1>
+  <h1 class="header-style">Your Pets</h1>
 </div >
     <div class="container">
       <div class="row">
@@ -10,12 +10,12 @@
               <% if pet.photo.attached?  %>
                 <img class="pet-card-avatar" src="<%= cl_image_path pet.photo.key, crop: :fill %>" alt="">
               <% else %>
-                <img class=<%= link_to cl_image_tag("14f2e99cd91947d087adf07bdc718c58_1_ozq2xn.png"), root_path %>
+                <%= cl_image_tag("14f2e99cd91947d087adf07bdc718c58_1_ozq2xn.png", class: "pet-card-default") %>
               <% end %>
               <h4 class="pet-name"><%= pet.name %></h4>
-              <p class="pet-info-section text-left"><span class="emoji">📔</span><span class="bold">Vet Record:  </span><%= pet.vet_record %></p>
-              <p class="pet-info-section text-left"><span class="emoji">💊</span><span class="bold">Medications:  </span><%= pet.medications %></p>
-              <p class="pet-info-section text-left"><span class="emoji">🍖</span><span class="bold">Dietary:  </span><%= pet.dietary %></p>
+              <p class="pet-info-section text-left"><span class="emoji">📔</span><span><strong>Vet Record:  </strong></span><%= pet.vet_record %></p>
+              <p class="pet-info-section text-left"><span class="emoji">💊</span><span><strong>Medications:  </strong></span><%= pet.medications %></p>
+              <p class="pet-info-section text-left"><span class="emoji">🍖</span><span><strong>Dietary:  </strong></span><%= pet.dietary %></p>
             </div>
           </div>
         <% end %>
