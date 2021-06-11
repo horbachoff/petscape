@@ -1,0 +1,27 @@
+.about-dog {
+  border: 1px solid red;
+  width: 100%;
+}
+
+.text-color-black {
+  color: #000;
+
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.dog-div {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url( "https://res.cloudinary.com/druc0epi3/image/upload/v1623185575/pexels-lumn-406014_u4wnkl.jpg" );
+  background-size: cover;
+  background-position: bottom;
+  padding: 80px;
+  border-radius: 50px;
+  width: 90%;
+  margin: 0 auto 40px auto;
+}
+
+.dog-div p {
+  text-align: left;
+}
