@@ -20,7 +20,6 @@
           <div>
             <p>
             <strong><%= booking.pet_nanny.user.name %></strong>, from <strong><%= booking.star_time.strftime('%a %d %b %Y') %></strong> to <strong><%= booking.end_time.strftime('%a %d %b %Y') %></strong>
-
             </p>
             <p class="my-2">
             <%= booking.pet_nanny.user.address %>
@@ -31,12 +30,12 @@
             <%= link_to "Leave a review meow", new_booking_pet_nanny_review_path(booking) %>
             </div>
           <% else %>
-            <p>Your Review:</p>
+            <p><strong>Your Review:</strong></p>
             <p>
-             "<%= booking.pet_nanny_review.content %>"
+             <em>"<%= booking.pet_nanny_review.content %>"</em>
             </p>
              <% booking.pet_nanny_review.rating.times do %>
-             <i class="fas fa-star"></i>
+             <i class="fas fa-star my-2"></i>
              <% end %>
           <% end %>
             <div>
