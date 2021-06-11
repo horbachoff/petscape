@@ -1,52 +1,7 @@
 <% @title="Find a Nanny" %>
-
-<div class="container">
-  <%# <h1 class= "my-3">Find a Nanny</h1> %>
-  <div class="row my-3" id="search-bar">
-    <div class="col-3" style="padding-right:0">
-      <p class="font-weight-bold">
-        Location
-      </p>
-      <%= form_tag pet_nannies_path, method: :get, id: "search-form" do %>
-      <%= text_field_tag :query,
-        params[:query],
-        class: "form-control rounded-right",
-        style: "border-radius:20px 0px 0px 20px",
-        placeholder: "address, city, zip",
-        required: "required"
-      %>
-    </div>
-    <div class="col-3" style="padding-left:0; padding-right:0">
-      <p class="font-weight-bold">
-        Check in
-      </p>
-      <%= date_field_tag :start_date,
-        params[:start_date],
-        class: "form-control",
-        placeholder: "start date",
-        required: "required"
-      %>
-    </div>
-
-    <div class="col-3" style="padding-left:0">
-      <p class="font-weight-bold">
-        Check out
-      </p>
-      <%= date_field_tag :end_date,
-        params[:end_date],
-        class: "form-control rounded-left",
-        style: "border-radius:0 20px 20px 0;",
-        placeholder: "end date",
-        required: "required"
-      %>
-    </div>
-    <div class="col-3">
-    <%= submit_tag "Search", class: "button positioning-botton" %>
-  </div>
-  </div>
-  <% end %>
-  </div>
-
+<div class="container" id="search-bar">
+  <%= render 'pet_nannies/search' %>
+</div>
 <div class="map-with-cards">
   <div class="row">
     <div class="col-6">

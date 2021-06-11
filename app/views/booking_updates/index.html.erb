@@ -24,7 +24,10 @@
         <div class="submission">
         <%= f.input :content, label: "Message #{@booking.pet_nanny.user.name}:", input_html: {rows: 10} %>
         </div>
-        <%= f.input :media, as: :file, label: "Attachments" %>
+        <div class="button-wrapper">
+          <label class="label" for="upload">Upload File</label>
+          <%= f.input_field :media, as: :file, label: "Attachments", class: "input-style", id: "upload" %>
+        </div>
         <%= f.submit "Send", class: "message-button" %>
       <% end %>
     </div>
