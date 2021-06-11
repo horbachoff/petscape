@@ -12,6 +12,7 @@ class BookingUpdatesController < ApplicationController
   def create
     @booking = Booking.find(params[:booking_id])
     @booking_update = BookingUpdate.new(booking_update_params)
+    @booking_update.user = current_user
     @booking_update.booking = @booking
     if @booking_update.save
       redirect_to booking_booking_updates_path(@booking)
