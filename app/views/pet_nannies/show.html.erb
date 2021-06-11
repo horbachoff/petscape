@@ -10,9 +10,6 @@
       <p>
         <span class="font-weight-bold">Phone Number:</span> <%= @pet_nanny.user.phone_number %>
       </p>
-      <p>
-        <span class="font-weight-bold">Email:</span> <%= @pet_nanny.user.email %>
-      </p>
       <% @bookings.each do |booking|%>
         <div>
           <% if booking.user == current_user  %>
