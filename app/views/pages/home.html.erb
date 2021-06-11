@@ -86,6 +86,8 @@
           <p class="font-weight-bold">
             Check out
           </p>
+          <div class="position-relative">
+
           <%= date_field_tag :end_date,
           params[:end_date],
           class: "form-control rounded-left",
@@ -93,10 +95,14 @@
           placeholder: "end date",
           required: "required"
           %>
+          <button type="submit" class="button position-absolute"style="top:-30px; right: 5px; height: 36px; width: 36px; display:flex; align-items: center; justify-content: center">
+            <i class="fas fa-search"></i>
+          </button>
+          </div>
         </div>
-        <div class="col-12 text-center">
-          <%= submit_tag "find a pet nanny", class: "button" %>
-        </div>
+        <!-- <div class="col-12 text-center">
+ -->
+        <!-- </div> -->
       </div>
     <% end %>
   </div>
