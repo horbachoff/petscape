@@ -19,19 +19,25 @@
         <div class="card-trip-infos">
           <div>
             <p>
-              <%= booking.pet_nanny.user.name %>, from <%= booking.star_time.strftime('%a %d %b %Y') %> to <%= booking.end_time.strftime('%a %d %b %Y') %>
+            <strong><%= booking.pet_nanny.user.name %></strong>, from <strong><%= booking.star_time.strftime('%a %d %b %Y') %></strong> to <strong><%= booking.end_time.strftime('%a %d %b %Y') %></strong>
 
             </p>
-            <h2 class="my-2">
-            Location
-            </h2>
+            <p class="my-2">
+            <%= booking.pet_nanny.user.address %>
+            </p>
             <% if !booking.pet_nanny_review.present? %>
             <div>
             <i class="fas fa-calendar-week"></i>
             <%= link_to "Leave a review meow", new_booking_pet_nanny_review_path(booking) %>
             </div>
           <% else %>
-             <p>You already left a review meow</p>
+            <p>Your Review:</p>
+            <p>
+             "<%= booking.pet_nanny_review.content %>"
+            </p>
+             <% booking.pet_nanny_review.rating.times do %>
+             <i class="fas fa-star"></i>
+             <% end %>
           <% end %>
             <div>
               <i class="fas fa-calendar-week"></i>
@@ -39,7 +45,7 @@
             </div>
         </div>
 
-            <h2 class="card-trip-pricing">$<%= booking.amount %></h2>
+            <h2 class="card-trip-pricing">$<%= (booking.amount_cents / 100) * (booking.end_time - booking.star_time).to_i %></h2>
 
              <% if booking.pet_nanny.user.photo.attached? %>
           <%= cl_image_tag booking.pet_nanny.user.photo.key, crop: :fill, class: "card-trip-user avatar-bordered" %>
