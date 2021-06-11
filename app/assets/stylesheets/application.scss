@@ -30,6 +30,11 @@
   width: 100%;
   position: sticky;
   top: 0;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 39px -7px rgba(0, 0, 0, 0.692);
+  border-radius: 40px;
+  border-style: solid;
+  border-color: rgb(197, 193, 193);
 }
 
 @media (min-width: 100px) and (max-width: 575px) {

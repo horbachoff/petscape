@@ -1,6 +1,6 @@
 <% @title="Pet Nanny Profile" %>
 <div class="container p-5">
- <div class="d-flex card-white">
+ <div class="d-flex card-white" id="pet-nanny-book">
    <div class="p-5 flex-even text-center">
       <h1>Hello, I'm <%= @pet_nanny.user.name %></h1>
       <img src="<%= @pet_nanny.user.profile_picture %>" class="profile-circle m-3"  alt="pet_name">
@@ -9,9 +9,6 @@
       </p>
       <p>
         <span class="font-weight-bold">Phone Number:</span> <%= @pet_nanny.user.phone_number %>
-      </p>
-      <p>
-        <span class="font-weight-bold">Email:</span> <%= @pet_nanny.user.email %>
       </p>
       <% @bookings.each do |booking|%>
         <div>
